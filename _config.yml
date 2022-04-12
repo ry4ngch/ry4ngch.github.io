@@ -67,7 +67,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/ryangch/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -76,7 +76,7 @@ author:
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "ttps://www.linkedin.com/in/ryangch/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
