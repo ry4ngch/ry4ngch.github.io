@@ -3,6 +3,23 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hi! I'm Ryan, a mechanical engineer with a strong interest in data analytics, applied machine learning, and web development.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Before transitioning into engineering, I worked as a web developer at a startup, where I focused on UI/UX design and API development. That early experience laid the foundation for my passion for building practical, user-focused digital tools.
+
+Today, I enjoy working at the intersection of engineering, data, and software — applying analytical thinking to solve real-world problems and build useful applications.
+
+## What I Do
+
+- 🔍 Data Analytics: Extracting insights from data using Python, SQL, and visualization tools.
+- 🤖 Machine Learning: Applying ML techniques for predictive modeling and automation.
+- 🌐 Web Development: Building full-stack web applications with modern frameworks.
+- 🛠️ Engineering Mindset: Applying systematic problem-solving and design thinking from my mechanical engineering background.
+
+## Explore This Site
+
+Here on my GitHub Pages site, you’ll find:
+
+- 🔗 Projects – A showcase of the work I’ve done in analytics, ML, and web development
+- 📄 Write-ups – [If applicable] Notes, tutorials, or blog-style posts about what I'm learning
+- 📁 Open Source – Repositories I’ve built or contributed to
