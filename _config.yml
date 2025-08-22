@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Ryan Goh"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Mechanical Engineer | Web Developer"
+  bio    : "Mechanical Engineer/Web Developer"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
