@@ -61,8 +61,7 @@ plugins:
 author:
   name   : "Ryan Goh"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I'm a mechanical engineer with a passion for data analytics, applied machine learning, and web development.
-Before my engineering career, I honed my skills as a web developer for a startup, working on UI/UX and API development."
+  bio    : "Mechanical Engineer | Web Developer"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
