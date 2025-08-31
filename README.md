@@ -1,27 +1,62 @@
-# Minimal Mistakes remote theme starter
+# Personal GitHub Page
+![Built with Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-blue?logo=jekyll)
+![Theme: Minimal Mistakes](https://img.shields.io/badge/Theme-Minimal%20Mistakes-lightgrey)
+![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?logo=github)
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-Contains basic configuration to get you a site with:
+# Introduction
+This is the repository containing the code for my personal GitHub Page.  
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+The GitHub Page was created to:
+- Showcase my personal projects  
+- Share tutorials on **engineering** and **web development**
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+This site uses the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).  
+Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest way to start your own site with the same theme.
+
+[**Visit my live site here**](https://ry4ngch.github.io)
 
 ---
 
-## Troubleshooting
+## Local Setup
+To preview the site locally before pushing changes:
+1. Install Ruby and Bundler (if not already installed).
+    ```bash
+    gem install bundler
+    ```
+    > [!NOTE]
+    > To check if **bundler** is installed, run the following commands:
+    > `gem list | grep bundler`
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/ry4ngch/ry4ngch.github.io.git
+   cd ry4ngch.github.io
+   ```
+3. Install dependencies:
+    ```bash
+    bundle config set --local path 'vendor/bundle'
+    bundle install
+    ```
+    > [!NOTE]
+    > This will install all gems into a local `vendor/bundle` directory.
+4. Start the local server:
+    ```bash
+    bundle exec jekyll serve
+    ```
+5. Open `http://localhost:4000` in your browser
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## Repository Structure
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+- _posts/ – Blog posts and tutorials
+- _pages/ – Static pages like About, Projects, etc.
+- _config.yml – Site configuration file
+- assets/ – Images, CSS, and JS files
+- _layout/ - Layout templates from Minimal Mistakes (not currently used, reserved for future customization)
+- _portfolio/ - Portfolio pages (not currently used)
+- _sass/ - Theme styling files (not required for remote theme usage, for advanced customization only)
+
+## License
+
+This project uses the [Minimal Mistakes Jekyll theme license](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE).
+
+Feel free to fork or clone the repository, but please credit the theme author if you reuse the theme.

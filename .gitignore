@@ -2,3 +2,24 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+
+# Ignore Ruby and Jekyll dependencies
+/vendor/
+/.bundle/
+/_site/
+
+# Ignore Ruby-specific files
+*.gem
+*.rbc
+
+# Ignore log and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files (if used)
+.env

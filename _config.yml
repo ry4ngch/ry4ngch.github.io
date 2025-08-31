@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ryan
+title: Ryan Goh
 email: ry4n.gch@gmail.com
 description: >- 
   Mechanical engineer and aspiring engineering software developer sharing insights, tools, and tutorials on design, automation, and technology. 

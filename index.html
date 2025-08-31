@@ -4,43 +4,60 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: splash
 author_profile: true
+title: "Ryan Goh"
+excerpt: 'Mechanical Engineer <br> Web Developer'
 
 # Apply classes to page body tag
 classes:
-    - landing
-    - dark-theme
+  - landing
+  - dark-theme
 
 header:
-    overlay_color: "#000"
-    overlay_filter: "0.5"
-    overlay_image: /assets/images/landing_intro.jpg
-    actions:
-        - label: "Connect with Me"
-        url: "https://www.linkedin.com/in/ryangch/"
+  overlay_color: "#000"
+  overlay_filter: "0.2"
+  overlay_image: /assets/images/landing_bio_blue.png
+  actions:
+    - label: "Connect with Me"
+      url: "https://www.linkedin.com/in/ryangch/"
+
 intro:
-    - excerpt: "Hi! I'm Ryan, a mechanical engineer with a strong interest in data analytics, applied machine learning, and web development. Before transitioning into engineering, I worked as a web developer at a startup, where I focused on UI/UX design and API development. That early experience laid the foundation for my passion for building practical, user-focused digital tools. Today, I enjoy working at the intersection of engineering, data, and software — applying analytical thinking to solve real-world problems and build useful applications."
+  - excerpt: "Hi! I'm Ryan, a mechanical engineer with a strong interest in data analytics, applied machine learning, and web development. Before transitioning into engineering, I worked as a web developer at a startup, where I focused on UI/UX design and API development. That early experience laid the foundation for my passion for building practical, user-focused digital tools. Today, I enjoy working at the intersection of engineering, data, and software — applying analytical thinking to solve real-world problems and build useful applications."
 
 feature_row1:
-    - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
+  - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
     alt: "ASME-PVDE"
     title: "ASME-PVDE"
-    excerpt: "Excel VBA Pressure Vessel Design Program"
+    excerpt: "An automated Excel VBA tool for pressure vessel design, integrating ASME code calculations for fast, accurate engineering analysis"
     url: "https://github.com/ry4ngch/ASME-PVDE"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
 feature_row2:
-    - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
+  - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
     alt: "react-boilerplates"
     title: "React Boilerplates"
-    excerpt: "React Boilerplates for Web Developments"
+    excerpt: "Kickstart your web projects with optimized React boilerplates for faster, cleaner development"
     url: "https://github.com/ry4ngch/React-Boilerplates"
     btn_label: "Read More"
+    btn_class: "btn--primary"
+
+feature_row3:
+  - image_path: https://raw.githubusercontent.com/ry4ngch/VBA-Stack/main/Interpolation/Interpolation_Function_Comparison.png
+    alt: "VBA-stacks"
+    title: "VBA Stacks"
+    excerpt: "VBA subroutines and functions developed for engineering applications"
+    url: "https://github.com/ry4ngch/VBA-stack"
+    btn_label: "See the Github Repo"
     btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row1" type="left"%}
+<h3 style="text-decoration:underline">Some Personal Projects I've worked on:</h3>
+<br/>
+
+{% include feature_row id="feature_row1" type="left" %}
 
 {% include feature_row id="feature_row2" type="right" %}
+
+{% include feature_row id="feature_row3" type="left" %}
