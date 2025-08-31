@@ -23,11 +23,15 @@ The ASME PVDE Engineering Automation Tool is a custom-built **Excel VBA applicat
 ---
 
 ## ⚡ Key Highlights
-- 🧩 **Calculations**: Comprehensive ASME Section VIII component sizing and stress checks  
-- 📊 **Databases**: Materials, flanges, piping, gaskets, bolts (built-in)  
-- 🖥️ **Worksheets**: Multiple sheets for code and non-code components  
-- ⚡ **Workflow**: Excel-integrated with real-time warnings and quick navigation  
-- 🛠️ **Ease of Use**: Suitable for engineers with limited coding experience  
+
+| Features        | Description                                                        |
+|:----------------|:------------------------------------------------------------------:|
+| 🧩 Calculations | Comprehensive **ASME Section VIII calculations**                    |
+| 📊 Databases    | Built-in **materials, flanges, piping, gaskets, bolts**             |
+| 🖥️ Worksheets   | Multiple sheets for **code & non-code components**                  |
+| ⚡ Workflow      | **Excel-integrated** with real-time warnings and quick navigation   |
+| 🛠️ Ease of Use  | Suitable for engineers with limited coding experience               |
+|=======================================================================================|
 
 Check out the [GitHub repository][ASME-PVDE] for more information.
 
@@ -65,8 +69,12 @@ Check out the [GitHub repository][ASME-PVDE] for more information.
 - **PED Classification** (Quick check for PED category)
 
 ### Built-in Database
-- **Flanges** – ASME B16.5, ASME B16.47  
-- **Gaskets** – ASME B16.20, ASME B16.21  
-- **Piping** – ASME B36.10, ASME B36.19  
-- **Bolting** – TEMA, PCC-1  
-- **Materials** – ASME Sect. II Part D, Years 2019–2023
+
+| Type      | Standards / Years                     |
+|:----------|:-------------------------------------:|
+| Flanges   | ASME B16.5, ASME B16.47               |
+| Gaskets   | ASME B16.20, ASME B16.21              |
+| Piping    | ASME B36.10, ASME B36.19              |
+| Bolting   | TEMA, PCC-1                           |
+| Materials | ASME Sect. II Part D, Years 2019–2023 |
+|===================================================|
