@@ -8,12 +8,15 @@ tags:
   - ASME BPVC
   - VBA Programming
 excerpt: "Overview of the ASME PVDE Excel VBA tool for pressure vessel design automation."
+toc: true
+toc_sticky: true
 ---
 
-# ASME PVDE Engineering Automation Tool
 🛠️ Simplifying Pressure Vessel Design with Excel + VBA
 
-Want to know **how this tool was built and evolved**? Read [Behind the Scenes – Building ASME PVDE in Excel VBA](./behind-the-scenes-building-asme-pvde-in-excel-vba).
+Want to know **how this tool was built and evolved**? Read [Behind the Scenes – Building ASME PVDE in Excel VBA][Development-Background].
+
+[Development-Background]: {% post_url 2025-08-31-ASME-PVDE-development-background %}
 
 The ASME PVDE Engineering Automation Tool is a custom-built **Excel VBA application** designed to streamline pressure vessel component calculations according to **ASME Section VIII, Division 1**. By integrating complex engineering logic into a user-friendly Excel interface, the tool enables engineers to perform accurate, audit-ready calculations with minimal setup time.
 

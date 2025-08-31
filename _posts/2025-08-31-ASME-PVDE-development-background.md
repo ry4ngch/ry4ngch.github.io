@@ -8,11 +8,13 @@ tags:
   - ASME BPVC
   - VBA Programming
 excerpt: "The story behind the development of the ASME PVDE Excel VBA tool."
+toc: true
+toc_sticky: true
 ---
 
-# Behind the Scenes – Building ASME PVDE in Excel VBA
+Curious about the **features of ASME PVDE**? Check out [ASME-PVDE: Features Overview][Feature-Overview] first.
 
-Curious about the **features of ASME PVDE**? Check out [ASME-PVDE: Features Overview](./asme-pvde-features-overview) first.
+[Feature-Overview]: {% post_url 2025-08-31-ASME-PVDE-feature-overview %}
 
 In **February 2021**, I joined a smaller company after leaving a large corporation. I noticed that many SMEs in Malaysia either avoided commercial engineering software due to cost or relied heavily on **manual calculations**, often leading to inefficiencies and potential errors.  
 
