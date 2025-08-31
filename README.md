@@ -50,6 +50,23 @@ To preview the site locally before pushing changes:
     ```
 5. Open `http://localhost:4000` in your browser
 
+## Git setup
+### Method 1: Using Github Pages (for [safe-listed plugin](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins) only)
+1. Go to **Settings -> Pages -> Build and deployment**
+2. Set source to **Deploy from a branch**
+3. Set the branch to **master -> / (root)** or **main -> / (root)**  
+4. We can now see **Actions** tabs is building under the workflow **pages-build-deployment** which is the default Github Pages Build.
+
+> [!NOTE]
+> Make sure to disable / comment out **jekyll-algolia** in **Gemfile** if using this method, otherwise, github will throw an error below:
+> "The github-pages gem can't satisfy your Gemfile's dependencies. If you want to use a different Jekyll version or need additional dependencies, consider building Jekyll site with GitHub Actions: https://jekyllrb.com/docs/continuous-integration/github-actions/"
+
+### Method 2: Using Github Actions (recommended for custom plugins and jekyll-algolia usage)
+1. Add `.github/workflows/deploy.yml`
+2. Go to **Repository Settings -> Pages** and set the source to **GitHub Actions**
+3. Push a commit from the `main` or `master` branch
+4. Watch the build logs under **Actions** for the workflow **Deploy Jekyll site to GitHub Pages**
+
 ## Repository Structure
 
 - _posts/ – Blog posts and tutorials
