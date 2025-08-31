@@ -24,21 +24,26 @@ To preview the site locally before pushing changes:
     ```bash
     gem install bundler
     ```
-    > [!NOTE]
-    > To check if **bundler** is installed, run the following commands:
-    > `gem list | grep bundler`
+> [!NOTE]
+> To check if **bundler** is installed, run the following commands:
+> ```bash
+> gem list | grep bundler
+> ```  
+
 2. Clone this repository:
    ```bash
    git clone https://github.com/ry4ngch/ry4ngch.github.io.git
    cd ry4ngch.github.io
    ```
+
 3. Install dependencies:
     ```bash
     bundle config set --local path 'vendor/bundle'
     bundle install
     ```
-    > [!NOTE]
-    > This will install all gems into a local `vendor/bundle` directory.
+> [!NOTE]
+> This will install all gems into a local `vendor/bundle` directory.
+
 4. Start the local server:
     ```bash
     bundle exec jekyll serve
