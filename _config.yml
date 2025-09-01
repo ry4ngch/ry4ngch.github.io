@@ -15,6 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Ryan Goh
 email: ry4n.gch@gmail.com
+url: "https://ry4ngch.github.io"
+lang: "en"
 description: >- 
   Mechanical engineer and aspiring engineering software developer sharing insights, tools, and tutorials on design, automation, and technology. 
   # this means to ignore newlines until "baseurl:"
