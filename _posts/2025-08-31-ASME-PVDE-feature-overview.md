@@ -1,5 +1,5 @@
 ---
-title: "ASME-PVDE: Features Overview"
+title: "ASME-PVDE: Intro & Features Overview"
 date: 2025-08-31T21:00:00+08:00
 layout: single
 categories:
@@ -7,7 +7,7 @@ categories:
 tags:
   - ASME BPVC
   - VBA Programming
-excerpt: "Overview of the ASME PVDE Excel VBA tool for pressure vessel design automation."
+excerpt: "Overview of the ASME PVDE Excel VBA open source software for pressure vessel design."
 toc: true
 toc_sticky: true
 seo_title: "ASME PVDE Excel VBA Tool – Pressure Vessel Design Automation & Built-in Database"

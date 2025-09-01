@@ -48,6 +48,13 @@ To preview the site locally before pushing changes:
     ```bash
     bundle exec jekyll serve
     ```
+
+> [!NOTE]
+> To build it locally, use the following command:
+> ```bash
+> bundle exec jekyll build
+> ```
+
 5. Open `http://localhost:4000` in your browser
 
 ## Git setup
@@ -69,6 +76,8 @@ To preview the site locally before pushing changes:
 2. Go to `Repository Settings -> Page` and set the source to **GitHub Actions**.
 3. Push a commit from the `main` or `master` branch
 4. Watch the build logs under **Actions** for the workflow **Deploy Jekyll site to GitHub Pages**
+
+After either of the above 2 methods is used, we can now navigate to the actual live website at `<your-repo>.github.io`.
 
 ## Repository Structure
 

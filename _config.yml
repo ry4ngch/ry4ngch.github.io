@@ -19,10 +19,10 @@ url: "https://ry4ngch.github.io"
 lang: "en"
 description: >- 
   Mechanical engineer and aspiring engineering software developer sharing insights, tools, and tutorials on design, automation, and technology. 
-  # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# this means to ignore newlines until "baseurl:"
+# Write an awesome description for your new site here. You can edit this
+# line in _config.yml. It will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: dirt
@@ -107,7 +107,7 @@ footer:
       url: "ttps://www.linkedin.com/in/ryangch/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://ry4ngch.github.io"
+      url: "https://github.com/ry4ngch/"
 
 defaults:
   # _posts
