@@ -10,6 +10,9 @@ tags:
 excerpt: "The story behind the development of the ASME PVDE Excel VBA tool."
 toc: true
 toc_sticky: true
+seo_title: "ASME PVDE - The Open Source ASME Pressure Vessel Design Software Development Journey – Excel VBA Automation"
+seo_description: "Learn the story of ASME PVDE development in Excel VBA. Discover challenges, solutions, and evolution of this automated pressure vessel design tool with built-in material databases and user-friendly interface."
+image: "https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/splashscreen.JPG"
 ---
 
 Curious about the **features of ASME PVDE**? Check out [ASME-PVDE: Features Overview][Feature-Overview] first.

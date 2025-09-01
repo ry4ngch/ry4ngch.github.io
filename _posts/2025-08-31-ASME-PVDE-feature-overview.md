@@ -10,6 +10,9 @@ tags:
 excerpt: "Overview of the ASME PVDE Excel VBA tool for pressure vessel design automation."
 toc: true
 toc_sticky: true
+seo_title: "ASME PVDE Excel VBA Tool – Pressure Vessel Design Automation & Built-in Database"
+seo_description: "Explore ASME PVDE, a custom Excel VBA tool for automated pressure vessel calculations. Features include ASME Section VIII sizing, flanges, piping, gaskets, bolting databases, and multiple worksheets for code and non-code components."
+image: "https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG"
 ---
 
 🛠️ Simplifying Pressure Vessel Design with Excel + VBA

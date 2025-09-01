@@ -23,3 +23,6 @@ Thumbs.db
 
 # Ignore environment files (if used)
 .env
+
+# ignore development files
+/layout_in_dev/
