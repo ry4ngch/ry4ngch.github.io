@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+{% assign breadcrumbs_enabled = site.breadcrumbs %}
+{% if page.breadcrumbs != null %}
+  {% assign breadcrumbs_enabled = page.breadcrumbs %}
+{% endif %}
+{% if page.url != "/" and breadcrumbs_enabled %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include resume/profile.liquid %}
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {% if page.toc %}
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="resume-toc">
+              {% include resume/nav.liquid %}
+            </nav>
+          </aside>
+        {% endif %}
+
+        <div class="resume-wrapper">
+          <header class="resume-header">
+            <h1 class="resume-title">
+              {{ site.data.cv[0].user | upcase }}
+              {% if page.cv_pdf %}
+                <a
+                  {% if page.cv_pdf contains '://' %}
+                    href="{{ page.cv_pdf }}"
+                  {% else %}
+                    href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+                  {% endif %}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="resume-file-link"
+                >
+                  <i class="fa-solid fa-file-pdf"></i>
+                </a>
+              {% endif %}
+            </h1>
+            {% if page.summary and page.summary_title %}
+              <h3 class="anchor-title">{{page.summary_title | upcase}}</h3>
+            {% endif %}
+            {% if page.summary %}
+              <p class="resume-summary">{{ page.summary }}</p>
+            {% endif %}
+          </header>
+        
+          <article>
+            <div class="resume_wrapper">
+              {% for entry in site.data.cv %}
+                <div class="">
+                  <h3 class="anchor-title">
+                    {% if entry.icon %}
+                      <i class='fa-solid {{entry.icon}}'></i>
+                    {% endif %}
+                    {% if entry.region != 'profile' %}
+                      {{ entry.title | upcase }}
+                    {% endif %}
+                  </h3>
+                  <div>
+                    {% if entry.region != 'profile' %}
+                      {% case entry.type %}
+                        {% when 'timeline' %}
+                          {% include resume/timeline.liquid %}
+                        {% when 'basic' %}
+                          {% include resume/basic.liquid %}
+                        {% else %}
+                          {{ entry.contents }}
+                      {% endcase %}
+                    {% endif %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </article>
+        </div>
+      </section>
+
+  
+  
+</div>
+

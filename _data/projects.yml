@@ -1,0 +1,30 @@
+feature_row1:
+  - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
+    alt: "ASME-PVDE"
+    title: "ASME-PVDE"
+    excerpt: "An automated Excel VBA tool for pressure vessel design, integrating ASME code calculations for fast, accurate engineering analysis"
+    url: "https://ry4ngch.github.io/blog/ASME-PVDE-feature-overview/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+    classes:
+      - feature-row__card
+feature_row2:
+  - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
+    alt: "react-boilerplates"
+    title: "React Boilerplates"
+    excerpt: "Kickstart your web projects with optimized React boilerplates for faster, cleaner development"
+    url: "https://github.com/ry4ngch/React-Boilerplates"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+    classes:
+      - feature-row__card
+feature_row3:
+  - image_path: https://raw.githubusercontent.com/ry4ngch/VBA-Stack/main/Interpolation/Interpolation_Function_Comparison.png
+    alt: "VBA-stacks"
+    title: "VBA Stacks"
+    excerpt: "VBA subroutines and functions developed for engineering applications"
+    url: "https://github.com/ry4ngch/VBA-stack"
+    btn_label: "See the Github Repo"
+    btn_class: "btn--primary"
+    classes:
+      - feature-row__card

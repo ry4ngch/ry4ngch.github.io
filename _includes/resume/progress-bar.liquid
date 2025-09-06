@@ -1,0 +1,10 @@
+<div class="progress-bar-container">
+    {% for content in pd.contents %}
+        <h2>
+            <label class="progress-name">{{content.name}}</label>
+        </h2>
+        <div class="progress-bar" data-value="{{content.value}}">
+            <progress min="0" max="100" value="{{content.value}}"></progress>
+        </div>
+    {% endfor %}
+</div>

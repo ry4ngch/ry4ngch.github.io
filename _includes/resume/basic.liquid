@@ -1,0 +1,27 @@
+<div class="list">
+    {% for content in entry.contents %}
+        <div class="list-item">
+        <h3>{{content.title}} </h3>
+        {% if content.description %}
+            <ul>
+                {% for item in content.description %}
+                    <li>
+                        {% if item.contents %}
+                            <span class="item-title">{{ item.title }}</span>
+                            <ul class="subitems">
+                                {% for subitem in item.contents %}
+                                    <li>
+                                        <span class="subitem">{{ subitem }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <span class="item">{{ item }}</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        </div>
+    {% endfor %}
+</div>

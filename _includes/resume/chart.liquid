@@ -1,0 +1,12 @@
+<div class="chart">
+    <ul>
+        {% for content in pd.contents %}
+            <li>
+                <span class="skill-name">{{content.name}}</span>
+                <span class="mastery">
+                    <div style="width:{{content.value}}"></div>
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

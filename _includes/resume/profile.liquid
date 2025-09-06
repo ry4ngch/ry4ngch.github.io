@@ -1,0 +1,48 @@
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+  <div class="sidebar sticky">
+    {% assign author = page.author | default: page.authors[0] | default: site.author %}
+    {% assign author = site.data.authors[author] | default: author %}
+    
+    <div itemscope itemtype="https://schema.org/Person" class="h-card">
+    
+      {% if author.avatar %}
+        <div class="author__avatar">
+          <a href="{{ author.home | default: '/' | absolute_url }}">
+            <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+          </a>
+        </div>
+      {% endif %}
+    
+      <div class="author__urls-wrapper">
+        <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+        <ul class="resume-profile">
+          {% assign profile_datas = site.data.cv | where: 'region', 'profile' %}
+
+          {% for pd in profile_datas %}
+            <h5 class="anchor-title">{{pd.title | upcase}}</h5>
+            {% case pd.type %}
+              {% when 'table' %}
+                {% include resume/table.liquid %}
+              {% when 'chart' %}
+                {% include resume/chart.liquid %}
+              {% when 'progress' %}
+                {% include resume/progress-bar.liquid %}
+              {% when 'pill' %}
+                {% for content in pd.contents %}
+                  <section class="pill-section">
+                    <h6 class="pill-title">{{content.title}}</h6>
+                    {% include resume/pill-tag.liquid %}
+                  </section>
+                {% endfor %}
+              {% else %}
+                {{ profile_data.contents }}
+            {% endcase %}
+          {% endfor %}
+          
+        </ul>
+      </div>
+    </div>
+    
+ 
+  </div>
+{% endif %}

@@ -1,0 +1,14 @@
+<table>
+    <tbody>
+        {% for row in pd.contents %}
+            <tr>
+                <td><i class="fa-solid {{row.icon}}"></i></td>
+                {%if row.type != 'link'%}
+                    <td>{{row.value}}</td>
+                {% else %}
+                    <td><a class="social-link" href="{{row.value}}">{{row.value}}</a></td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

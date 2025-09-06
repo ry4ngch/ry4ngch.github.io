@@ -1,0 +1,209 @@
+- user: Ryan Goh Chuang Hong
+
+- title: Contact
+  region: profile
+  type: table
+  contents:
+    - name: Phone
+      icon: 'fa-phone'
+      value: '+60162598575'
+    - name: Email
+      icon: 'fa-envelope'
+      value: ry4n.gch@gmail.com
+    - name: LinkedIn
+      icon: 'fa-brands fa-linkedin-in'
+      type: 'link'
+      value: https://www.linkedin.com/in/ryangch/
+    - name: Location
+      icon: 'fa-location-dot'
+      value: Petaling Jaya, Selangor
+    - name: GitHub
+      icon: 'fa-brands fa-github'
+      type: 'link'
+      value: https://github.com/ry4ngch/
+
+- title: Language
+  region: profile
+  type: chart
+  contents:
+    - name: 'English'
+      value: 100%
+    - name: 'Malay'
+      value: 80%
+    - name: 'Chinese'
+      value: 30%
+
+- title: Skills
+  region: profile
+  type: pill
+  contents:
+    - title: Programming / Web Development
+      description: 
+        - name: JavaScript
+          icon: 'fa-brands fa-js'
+        - name: SASS
+          icon: 'fa-brands fa-sass'
+        - name: ReactJS
+          icon: 'fa-brands fa-react'
+        - name: VBA
+          icon: ''
+        - name: PHP
+          icon: 'fa-brands fa-php'
+        - name: MySQL
+          icon: 'icon-mysql'
+        - name: 'HTML'
+          icon: 'fa-brands fa-html5'
+        - name: 'Ionic Framework'
+          icon: ''
+        - name: 'Python'
+          icon: 'fa-brands fa-python'
+    - title: Static Design
+      description: 
+        - name: PVElite
+          icon: ''
+        - name: Codeware Compress
+          icon: ''
+    - title: Finite Element Analysis
+      description: 
+        - name: NozzlePRO PRG
+          icon: ''
+        - name: ANSYS
+          icon: ''
+    - title: CAD Design
+      description:
+        - name: Inventor
+          icon: ''
+        - name: SolidWorks
+          icon: ''
+        - name: AutoCAD
+          icon: ''
+
+- title: Education
+  type: timeline
+  icon: 'fa-building-columns'
+  contents:
+    - title: Data Science and Machine Learning - Making Data-Driven Decisions
+      institution: Massachusetts Institute of Technology | MIT IDSS
+      year: 2022
+      description:
+        - Completed 3 Months Bootcamp on Data Science and Machine Learning
+    - title: Masters' In Mechanical Engineering (Hons)
+      institution: University of Nottingham, Malaysia
+      year: Sept 2014 - July 2018
+      description:
+        - Graduated with second upper class (GPA 3.5)
+    - title: Cambridge A-Levels
+      institution: KDU University College
+      year: March 2013 - June 2014
+
+- title: Experience
+  type: timeline
+  icon: 'fa-briefcase'
+  contents:
+    - title: Mechanical Engineer Cum Project Engineer
+      institution: DFINITI Technologies Sdn Bhd
+      year: May 2021 - Current
+      description:
+        - Designed and executed mechanical stress analysis and engineering for over 60 ASME Section VIII Division 1 pressure vessels and electric immersion heaters, including hands-on development of detailed calculation reports, 2D/3D CAD models, and structural integrity checks to ensure full code compliance.
+        - Built and deployed a design automation tool using VBA and Power Query, directly developing logic and coding the tool to reduce proposal turnaround time by 40% and improve cost estimation accuracy.
+        - Produced detailed engineering drawings and layouts in SolidWorks and AutoCAD, personally generating ASME U-forms, design calculations, and material requisitions for client submission and fabrication.
+        - Independently reviewed and validated structural and piping calculations for three major skid systems, applying ASME B31.3 and AISC standards to verify compliance.
+        - Provided both technical leadership and hands-on execution in material selection, PWHT procedures, and impact testing recommendations, directly contributing to a 20% improvement in project success rates.
+        - Developed standardized CAD templates and component libraries, personally developing these assets to reduce design time by 50% while ensuring consistency.
+        - Prepared and submitted complete mechanical documentation for ASME U Stamp renewal, managing both the technical content and audit documentation for successful certification.
+        - Conducted in-depth technical reviews of material and production test certificates, ensuring strict adherence to ASME codes and project specifications.
+        - Personally handled complex mechanical issues, performing root cause analysis and implementing corrective actions that led to a 30% reduction in recurring design and fabrication problems.
+
+    - title: Mechanical Design Engineer
+      institution: Jutasama Sdn Bhd
+      year: Sept 2018 - Nov 2020
+      description:
+        - Executed complete stress analysis and mechanical design for pressure vessels, heat exchangers, columns, and ducting, meeting ASME VIII (Div. 1 & 2), PD5500, API 660, TEMA, and WRC 107/297 requirements.
+        - Performed FEA on nozzles, saddles, and support structures using NozzlePro, PVElite, COMPRESS, and manual methods, validating local stresses and optimizing designs for safety and efficiency.
+        - Built 3D CAD automation tools in Autodesk Inventor (API/iLogic), reducing design time and eliminating repetitive errors across multiple projects.
+        - Reviewed and corrected fabrication drawings and 3D models, ensuring strict compliance with ASME codes and client specifications while guiding drafters through technical requirements.
+        - Provided technical input during tendering, conducting preliminary strength checks and material assessments to improve proposal accuracy and competitiveness.
+        - Developed comprehensive engineering spreadsheets and authored technical specifications for PD5500 projects, ensuring full compliance and inspector approval.
+        - Resolved complex stress and design compliance issues with third-party inspectors, JKKP (DOSH), and clients, resulting in smooth approvals and project progression.
+        - Handled DOSH license renewals and audit documentation directly, ensuring continued certification through hands-on technical preparation.
+
+    - title: Web Developer
+      institution: Pinetop Technologies PLT
+      year: June 2015 - Dec 2017
+      description:
+        - Designed and developed web APIs for a bus tracking system and job-seeker platform using PHP and Zend Framework, seamlessly interfacing with MySQL databases and integrating JWT authentication for secure admin panel access.
+        - Engineered intuitive UI/UX designs for websites and hybrid web applications using HTML, CSS, JavaScript, AngularJS, and the Ionic Framework, delivering seamless and engaging user experiences across platforms.
+        - Developed real-time GPS tracking functionality by leveraging the Google Distance Matrix API, enabling precise vehicle location tracking and efficient route planning.
+        - Integrated Google Analytics to monitor and analyze website performance metrics, visualizing key insights on admin dashboards.
+        - Led hybrid web development initiatives, creating cross-platform solutions optimized for performance, responsiveness, and usability.
+        - Managed continuous deployment cycles, performing integration testing and code optimization for cross-platform apps.
+        - Engineered backend data pipelines for GPS tracking, ensuring real-time synchronization and system scalability
+        - Utilized Postman for API debugging and testing, streamlining endpoint validation and ensuring efficient, bug-free APIs.
+
+    - title: Research & Development Engineer (Intern)
+      institution: Henikwon Corporation Sdn Bhd
+      year: June 2017 - Sept 2017
+      description:
+        - Led the development of Standard Operating Procedures (SOPs) using Process Failure Mode and Effect Analysis (PFMEA) to enhance process reliability and minimize operational risks.
+        - Drove product improvement initiatives by performing precise dimensional checks on busbars, ensuring adherence to high-quality production standards.
+        - Coordinated the fabrication, assembly, and waterproof testing of busduct prototypes, ensuring successful product validation and performance.
+        - Created detailed 3D models and 2D drawings of busduct products and fixtures using SolidWorks, streamlining production processes and reducing lead times.
+        - Engineered IP65-rated sheet metal housings for busduct prototypes, achieving successful IP65 certification after rigorous testing at SIRIM QAS.
+        - Orchestrated and led IP65 certification testing, collaborating with SIRIM QAS to ensure full compliance with waterproofing and dust protection standards.
+
+
+    - title: Research & Development Engineer (Intern)
+      institution: FEISCO Security Sdn Bhd
+      year: July 2016 - Sept 2016
+      description:
+        - Transformed 2D civil engineering drawings into accurate 3D CAD models, optimizing for production efficiency and manufacturability.
+        - Spearheaded DFMA application, significantly reducing assembly time and enhancing production workflows.
+        - Led prototyping of custom 3D-printed enclosures for electrical circuits, accelerating development and testing.
+        - Developed and integrated responsive UI for registry system with AngularJS, Bootstrap, HTML, and CSS, connected to a Django backend.
+        - Engineered backend solutions with Postgres and MariaDB for seamless CRUD operations, optimizing frontend API performance.
+        - Researched LDAP and legacy database integration for Django, improving data management and system compatibility.
+        - Installed and configured critical server infrastructure, integrating FTP, Djoser, phpMyAdmin, MySQL, and Django on CentOS and Ubuntu.
+
+
+- title: Projects
+  type: timeline
+  icon: 'fa-table-list'
+  contents:
+    - title: <a href="https://github.com/ry4ngch/ASME-PVDE">Pressure Vessel Design and Estimation Program (ASME-PVDE)</a>
+      year: 2021 - 2025
+      description: Developed a VBA Excel based pressure vessel engineering software to automated design of pressure equipments with in-built database for flange, piping, gasket and materials.
+    - title: <a href="">Job Seeker Platform</a>
+      year: 2016 - 2017
+      description: Developed secure admin panel with JWT authentication, user matching system and database management.
+    - title: <a href="https://whereismybus.nottingham.edu.my">Real Time Bus Tracking Platform</a>
+      year: 2015 - 2017
+      description: Built API backend and cross platform frontend, integrating GPS data for real time fleet tracking.
+
+- title: Certification
+  type: basic
+  icon: 'fa-medal'
+  contents:
+    - title: Static Design / Engineering
+      description: 
+        - <a href="https://www.linkedin.com/in/ryangch/details/certifications/1707841145312/single-media-viewer?type=DOCUMENT&profileId=ACoAABY1bkQBbONN0ufi9EEYXEWPGZCd3DuEv2Y&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BCm7rAZQRSYWTnTeKpWyKgg%3D%3D">Certificate in ASME BPVC Sect. VIII, Div. 1 (Lloyds Register)</a>
+        - <a href="https://drive.google.com/file/d/1m-70Pqkx0uF7DgP-TMyO-N5sNwsYPQTy/view?usp=sharing">Certificate in Piping Flexibility and Stress Analysis (IDC Training House)</a>
+        - <a href="https://static.360learning.com/api/certification/1868999677895019/file.pdf">CAESAR II Fundamentals (Hexagon AB)</a>
+        - <a href="https://static.360learning.com/api/certification/9631292133918034/file.pdf">CAESAR II Statics One (Hexagon AB)</a>
+        - <a href="https://static.360learning.com/api/certification/3193227614179522/file.pdf">CAESAR II Statics Two (Hexagon AB)</a>
+        - <a href="https://universityhexagonali.360learning.com/api/certification/8744154017640829/file.pdf">CAESAR II Dynamics One (Hexagon AB)</a>
+    - title: Backend Development
+      description:
+        - <a href="https://freecodecamp.org/certification/fcc08adcb57/back-end-development-and-apis">Back End Development and APIs (FreeCodeCamp)</a>
+    - title: Project Management
+      description:  
+        - <a href="https://www.udemy.com/certificate/UC-904ebec6-0e9c-4550-99c1-7c191961db62/">Developing Professional Project Plans Through MS Project</a>
+    - title: UI/UX Development
+      description: 
+        - <a href="https://www.coursera.org/account/accomplishments/certificate/WS22B2CJ4MN5">Foundation of User Experience (UX) Design (Google) </a>
+    - title: Data Science
+      description: 
+        - <a href="https://www.coursera.org/account/accomplishments/certificate/9X8M4B45AVG6">Certificate in Data Analysis with Python (IBM)</a>
+        - <a href="https://olympus1.mygreatlearning.com/certificate/DIDMOBHU">Certificate in Data Science and Machine Learning (MIT IDSS)</a>
+        - <a href="https://coursera.org/verify/professional-cert/ZZWBGGT5P7SA">IBM Machine Learning Professional Certificate</a>
+        - <a href="https://www.coursera.org/account/accomplishments/certificate/MDD3G5K4DB73">Certificate in Machine Learning with Python (IBM)</a>
+        - <a href="https://www.udemy.com/certificate/UC-ea293d0d-5624-45fe-9ef8-af3a5ea9b8a8/">2023 R4.0 Programming for Data Science</a>

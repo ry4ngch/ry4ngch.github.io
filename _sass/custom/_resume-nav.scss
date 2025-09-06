@@ -1,0 +1,12 @@
+.resume-toc {
+    font-family: $sans-serif-narrow;
+    color: $gray;
+    background-color: $background-color;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+  
+    // Scrollspy marks toc items as .active when they are in focus
+    .active a {
+      @include yiq-contrasted($active-color);
+    }
+  }

@@ -1,0 +1,272 @@
+.resume-wrapper {
+  //background: #fff;
+  font-size: 15px;
+  line-height: 1.4;
+  max-width: 950px;
+  padding: 1em;
+}
+
+.anchor-title {
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.resume-title {
+  text-align: center;
+}
+
+
+.resume-file-link {
+  float: right;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 20px;
+  .line{
+    position: absolute;
+    background: #000;
+    height: 0%;
+    width: 1.5px;
+    top: 15px;
+    left: 8.5px;
+  }
+  &.condensed .line {
+    top: 7px;
+  }
+}
+
+.timeline-year {
+  padding: 10px;
+  border: 2px solid #081921;
+  border-radius: 20px
+}
+
+.timeline-item {
+  padding: 0px 15px 0px 30px;
+  position: relative;
+  margin-bottom: 15px;
+
+  h3 {
+    line-height: 2;
+  }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border: 1.5px solid #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 5px;
+    left: 4px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0; 
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+
+  & > p {
+    margin: 0;
+  }
+}
+
+.resume_wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding: 2px 0 0 20px;
+    position: relative;
+    &:before {
+      content: "\2014";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+/** Profile Section **/
+.resume-profile {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.9rem;
+  padding: 0;
+
+  .anchor-title {
+    font-size: 15px;
+    margin-bottom: 0.5em;
+  }
+
+  table {
+    border: none;
+    font-size: 12px;
+  }
+
+  .social-link {
+    text-decoration: none;
+  }
+}
+
+
+/** Bar Chart - Skills Mastery **/
+.chart {
+  ul {
+    padding: 0
+  }
+
+  ul li{
+    display:flex;
+    flex-direction:column;
+    gap:5px; 
+    margin: 0 10px 10px 10px;
+  }
+
+  .mastery{
+    position:relative;
+    width:100%;
+    height:6px;
+    background:#081921;
+    display:block;
+    margin-top:5px;
+  }
+
+  .mastery div{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+}
+
+/** For Progress Bar **/
+
+@property --progress-value {
+  syntax: '<integer>';
+  inherits: false;
+  initial-value: 0;
+}
+
+:root {
+  --target-value: 0;
+}
+
+@keyframes progress-increment {
+  to { --progress-value: var(--target-value) }
+}
+
+.progress-bar {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background:
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#03a9f4 calc(var(--progress-value) * 1%), #081921 0);
+  
+  animation: progress-increment 2s forwards;
+}
+
+.progress-bar::before {
+  counter-reset: percentage var(--target-value);
+  content: counter(percentage) '%';
+  position: absolute;
+  font-weight: bold;
+  color: #333;
+  font-size: 12px;
+}
+
+progress {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.progress-name {
+  font-size: 14px;
+}
+
+/** Pill */
+.pill-tag {
+	font-size: 14px;
+	font-family: system-ui;
+	padding: 0.5em 1em;
+	margin: 0.25em;
+	border-radius: 1em;
+	border: none;
+	outline: none;
+	background: #f3f3f3;;
+	cursor: pointer;
+}
+
+.pill-tag:hover {
+	background: #cccccc;
+}
+
+.pill-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.pill-section {
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+  }
+}
+
+.timeline {
+  position: relative;
+  margin-top: 20px;
+  .line{
+    position: absolute;
+    background: #000;
+    height: 0%;
+    width: 1.5px;
+    top: 15px;
+    left: 8.5px;
+  }
+  &.condensed .line {
+    top: 7px;
+  }
+}
+
+.list-item {
+  padding: 0px 15px 0px 30px;
+  position: relative;
+  margin-bottom: 15px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border: 1.5px solid #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 5px;
+    left: 4px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0; 
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+}

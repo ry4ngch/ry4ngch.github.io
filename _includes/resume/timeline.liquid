@@ -1,0 +1,31 @@
+<div class="timeline">
+    {% if entry.contents.size > 1 %}
+        <span class="line"></span>
+    {% endif %}
+    {% for content in entry.contents %}
+        <div class="timeline-item">
+        <h3>{{content.title}} <small class="timeline-year">{{content.year}}</small> </h3>
+        <p><em>{{content.institution}}</em></p>
+        {% if content.description %}
+            <ul>
+                {% for item in content.description %}
+                    <li>
+                        {% if item.contents %}
+                            <span class="item-title">{{ item.title }}</span>
+                            <ul class="subitems">
+                                {% for subitem in item.contents %}
+                                    <li>
+                                        <span class="subitem">{{ subitem }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <span class="item">{{ item }}</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        </div>
+    {% endfor %}
+</div>

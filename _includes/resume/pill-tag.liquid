@@ -1,0 +1,10 @@
+<ul>
+    {% for desc in content.description %}
+        <li class="pill-tag">
+            {% if desc.icon %}
+                <i class="{{desc.icon}}"></i>
+            {% endif %}
+            {{desc.name}}
+        </li>
+    {% endfor %}
+</ul>

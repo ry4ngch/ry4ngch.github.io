@@ -26,47 +26,27 @@ intro:
   - title: 'About Me'
   - excerpt: "Hi! I'm Ryan, a mechanical engineer with a strong interest in data analytics, applied machine learning, and web development. Before transitioning into engineering, I worked as a web developer at a startup, where I focused on UI/UX design and API development. That early experience laid the foundation for my passion for building practical, user-focused digital tools. Today, I enjoy working at the intersection of engineering, data, and software — applying analytical thinking to solve real-world problems and build useful applications."
 
-feature_row1:
-  - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
-    alt: "ASME-PVDE"
-    title: "ASME-PVDE"
-    excerpt: "An automated Excel VBA tool for pressure vessel design, integrating ASME code calculations for fast, accurate engineering analysis"
-    url: "https://ry4ngch.github.io/blog/ASME-PVDE-feature-overview/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    classes:
-      - feature-row__card
-
-feature_row2:
-  - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
-    alt: "react-boilerplates"
-    title: "React Boilerplates"
-    excerpt: "Kickstart your web projects with optimized React boilerplates for faster, cleaner development"
-    url: "https://github.com/ry4ngch/React-Boilerplates"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    classes:
-      - feature-row__card
-
-feature_row3:
-  - image_path: https://raw.githubusercontent.com/ry4ngch/VBA-Stack/main/Interpolation/Interpolation_Function_Comparison.png
-    alt: "VBA-stacks"
-    title: "VBA Stacks"
-    excerpt: "VBA subroutines and functions developed for engineering applications"
-    url: "https://github.com/ry4ngch/VBA-stack"
-    btn_label: "See the Github Repo"
-    btn_class: "btn--primary"
-    classes:
-      - feature-row__card
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-<h3 style="text-decoration:underline">Some Personal Projects I've worked on:</h3>
+<h3 style="text-decoration:underline">
+  Some Personal Projects I've worked on:
+</h3>
+
 <br/>
 
-{% include feature_row id="feature_row1" type="left" %}
+{% assign projects_data = site.data.projects | to_a %}
 
-{% include feature_row id="feature_row2" type="right" %}
+{% for project_row in projects_data %}
+  {% assign row_data = project_row[1] %}
 
-{% include feature_row id="feature_row3" type="left" %}
+  {% assign remainder = forloop.index | modulo: 2 %}
+  {% if remainder == 0 %}
+    {% assign type = 'right' %}
+  {% else %}
+    {% assign type = "left" %}
+  {% endif %}
+
+  {% include feature_row data_row=row_data type=type %}
+  {% endfor %}
