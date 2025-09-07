@@ -11,7 +11,6 @@ tags:
   - Ruby
   - Minimal Mistakes
 excerpt: "Learn how to enhance the Minimal Mistakes Jekyll theme by adding a fully customizable resume layout."
-author: Ryan Goh
 seo_title: "How to Add a Resume Layout to the Minimal Mistakes Jekyll Theme"
 seo_description: "Learn how to enhance your Jekyll site with a customizable resume layout using the Minimal Mistakes theme. A step-by-step guide with code and layout integration tips."
 toc: true
