@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+const loadTimelineLine = () => {
   const timelines = document.querySelectorAll('.resume_wrapper .timeline');
     
   if (timelines) {
@@ -25,4 +25,12 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  loadTimelineLine();
 });
+
+window.addEventListener('resize', (event) => {
+  loadTimelineLine();
+})
