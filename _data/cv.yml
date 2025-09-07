@@ -45,8 +45,8 @@
           icon: 'fa-brands fa-sass'
         - name: ReactJS
           icon: 'fa-brands fa-react'
-        - name: VBA
-          icon: ''
+        - name: VBA Excel
+          icon: 'fas fa-file-excel'
         - name: PHP
           icon: 'fa-brands fa-php'
         - name: MySQL
@@ -54,9 +54,11 @@
         - name: 'HTML'
           icon: 'fa-brands fa-html5'
         - name: 'Ionic Framework'
-          icon: ''
-        - name: 'Python'
+          icon: 'icon-ionic'
+        - name: Python
           icon: 'fa-brands fa-python'
+        - name: Jekyll
+          icon: 'fa-solid fa-vial'
     - title: Static Design
       description: 
         - name: PVElite

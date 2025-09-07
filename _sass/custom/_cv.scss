@@ -39,7 +39,8 @@
 .timeline-year {
   padding: 10px;
   border: 2px solid #081921;
-  border-radius: 20px
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .timeline-item {
@@ -268,5 +269,20 @@ progress {
 
   ul {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 64em){
+  #main.resume-contents {
+    article.page {
+      float: right;
+      width: 65%;
+    }
+
+    .sidebar {
+      float: left;
+      width: 30%;
+      overflow-x: scroll;
+    }
   }
 }
