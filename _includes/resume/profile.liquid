@@ -19,7 +19,7 @@
           {% assign profile_datas = site.data.cv | where: 'region', 'profile' %}
 
           {% for pd in profile_datas %}
-            <h5 class="anchor-title">{{pd.title | upcase}}</h5>
+            <h5 class="anchor-title" id="{{pd.title | replace: ' ', '_'}}">{{pd.title | upcase}}</h5>
             {% case pd.type %}
               {% when 'table' %}
                 {% include resume/table.liquid %}

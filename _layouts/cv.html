@@ -51,7 +51,7 @@ layout: default
               {% endif %}
             </h1>
             {% if page.summary and page.summary_title %}
-              <h3 class="anchor-title">{{page.summary_title | upcase}}</h3>
+              <h3 class="anchor-title" id="{{page.summary_title | replace: ' ', '_'}}">{{page.summary_title | upcase}}</h3>
             {% endif %}
             {% if page.summary %}
               <p class="resume-summary">{{ page.summary }}</p>
@@ -62,14 +62,16 @@ layout: default
             <div class="resume_wrapper">
               {% for entry in site.data.cv %}
                 <div class="">
-                  <h3 class="anchor-title">
-                    {% if entry.icon %}
-                      <i class='fa-solid {{entry.icon}}'></i>
+                  {% if entry.region != 'profile' %}
+                    {% if entry.title %}
+                      <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
+                        {% if entry.icon %}
+                          <i class='fa-solid {{entry.icon}}'></i>
+                        {% endif %}
+                        {{ entry.title | upcase }}
+                      </h3>
                     {% endif %}
-                    {% if entry.region != 'profile' %}
-                      {{ entry.title | upcase }}
-                    {% endif %}
-                  </h3>
+                  {% endif %}
                   <div>
                     {% if entry.region != 'profile' %}
                       {% case entry.type %}

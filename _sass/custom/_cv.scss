@@ -285,4 +285,32 @@ progress {
       overflow-x: scroll;
     }
   }
+
+  #js_sidebar {
+    display: none;
+  }
+}
+
+#js_sidebar {
+  .nav__sub-title {
+    font-weight:normal;
+    margin: 0;
+  }
+
+  .nav__title {
+    color: #333;
+  }
+
+  li {
+    padding-left: .3em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  li:hover {
+    border-left: 2px solid #333;
+    color: #333;
+  }
 }
