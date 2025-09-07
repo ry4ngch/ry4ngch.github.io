@@ -60,7 +60,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    top: 5px;
+    top: 1em;
     left: 4px;
   }
   
@@ -292,13 +292,25 @@ progress {
 }
 
 #js_sidebar {
-  .nav__sub-title {
-    font-weight:normal;
-    margin: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  
+  .nav__list {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .nav__title {
-    color: #333;
+    background: #383A45;
+    color: #ddd;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .nav__sub-title {
+    font-weight:normal;
+    margin: 0;
+    font-size: 13px;
   }
 
   li {

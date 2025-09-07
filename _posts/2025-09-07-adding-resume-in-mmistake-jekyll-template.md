@@ -28,14 +28,31 @@ You can download a sample version of this file from my [GitHub repository](https
 
 ---
 
-### Step 2: Add Layout and Includes
+### Step 2: Add Layout, Pages and Includes
 
 Once the data file is ready:
 
 1. Copy the `cv.html` layout file from the `_layouts` directory into your local project.
 2. Copy the entire `resume` folder from `_includes` to your local `_includes` directory.
+3. Copy the `cv.md` page file from the `_pages` directory into your local project.
 
 The `resume` folder contains all the sub-layouts (components) used within the `cv.html` layout. These partials are dynamically loaded based on the configuration specified in `_cv.yml`.
+
+The `cv.md` file serves as the primary page for your CV and should include the necessary front matter to define the CV page details. Use the following front matter structure: 
+
+```bash
+---
+layout: cv
+permalink: /cv/
+title: Resume # this is the title of the resume page.
+cv_pdf: ../pdf/resume.pdf # You can add your own pdf here.
+summary_title: Summary
+summary: Some summary text
+toc: 
+  title: Resume # define the toc title.
+toc_sticky: true
+---
+```
 
 ---
 
@@ -69,7 +86,22 @@ These partials must be imported into the main stylesheet (`minimal-mistakes.scss
 
 ---
 
-### Step 5 (Optional): Add `font-mfizz` Icons
+### Step 5: Setting up the table of content (toc) sidebar:
+To enable the TOC sidebar, include the following in the front matter of your `cv.md` file:
+
+```text
+toc: 
+  title: Resume
+  show_profile: false
+toc_sticky: true
+```
+
+**Note:** By default, `show_profile` is set to false. There are some known issues related to this feature that are currently being worked on. The table of contents is automatically generated based on the section titles defined in the `cv.yml` file.
+{: .notice--info}
+
+---
+
+### Step 6 (Optional): Add `font-mfizz` Icons
 If you want to enhance your resume with additional technology or brand icons not available in Font Awesome, you can include the font-mfizz package:
 
 1. Copy the `font-mfizz` folder into your `assets/css` directory.
