@@ -41,6 +41,8 @@
       description: 
         - name: JavaScript
           icon: 'fa-brands fa-js'
+        - name: CSS
+          icon: 'icon-css'
         - name: SASS
           icon: 'fa-brands fa-sass'
         - name: ReactJS
@@ -59,6 +61,12 @@
           icon: 'fa-brands fa-python'
         - name: Jekyll
           icon: 'fa-solid fa-vial'
+        - name: Bootstrap
+          icon: 'fa-brands fa-bootstrap'
+        - name: MongoDB
+          icon: 'icon-mongodb'
+        - name: NodeJS
+          icon: 'icon-nodejs'
     - title: Static Design
       description: 
         - name: PVElite
@@ -86,7 +94,7 @@
   contents:
     - title: Data Science and Machine Learning - Making Data-Driven Decisions
       institution: Massachusetts Institute of Technology | MIT IDSS
-      year: 2022
+      year: Aug 2022 - Nov 2022
       description:
         - Completed 3 Months Bootcamp on Data Science and Machine Learning
     - title: Masters' In Mechanical Engineering (Hons)
@@ -172,7 +180,7 @@
   icon: 'fa-table-list'
   contents:
     - title: <a href="https://github.com/ry4ngch/ASME-PVDE">Pressure Vessel Design and Estimation Program (ASME-PVDE)</a>
-      year: 2021 - 2025
+      year: Feb 2021 - Aug 2025
       description: Developed a VBA Excel based pressure vessel engineering software to automated design of pressure equipments with in-built database for flange, piping, gasket and materials.
     - title: <a href="">Job Seeker Platform</a>
       year: 2016 - 2017
