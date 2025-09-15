@@ -106,3 +106,30 @@
     width: 18px;
     vertical-align: middle;
 }
+
+/* For front page animation */
+.typewriter:after {
+    content: ' ';
+    display: inline-block;
+    background: rgba(120,120,120,0.7);
+    position:relative;
+    width: 10px;
+    height: 1.1em;
+    vertical-align: middle;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes blink {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}

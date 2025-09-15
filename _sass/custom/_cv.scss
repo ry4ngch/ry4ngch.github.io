@@ -48,9 +48,6 @@
   position: relative;
   margin-bottom: 15px;
 
-  // h3 {
-  //   line-height: 2;
-  // }
   
   &:before {
     content: "";
@@ -74,6 +71,10 @@
 
   & > p {
     margin: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -269,6 +270,10 @@ progress {
 
   ul {
     margin-bottom: 20px;
+  }
+
+  .item > a {
+    text-decoration: none;
   }
 }
 

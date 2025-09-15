@@ -185,9 +185,13 @@
     - title: <a href="">Job Seeker Platform</a>
       year: 2016 - 2017
       description: Developed secure admin panel with JWT authentication, user matching system and database management.
+    - title: <a href="">Registry System Application</a>
+      year: 2016
+      description: Built Frontend UI/UX scheduling system linked with Django Backend API.
     - title: <a href="https://whereismybus.nottingham.edu.my">Real Time Bus Tracking Platform</a>
       year: 2015 - 2017
       description: Built API backend and cross platform frontend, integrating GPS data for real time fleet tracking.
+    
 
 - title: Certification
   type: basic
