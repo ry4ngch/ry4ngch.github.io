@@ -70,23 +70,23 @@
     - title: Static Design
       description: 
         - name: PVElite
-          icon: ''
+          icon: 'icon-hexagon'
         - name: Codeware Compress
-          icon: ''
+          icon: 'icon-codeware'
     - title: Finite Element Analysis
       description: 
         - name: NozzlePRO PRG
-          icon: ''
+          icon: 'icon-prg'
         - name: ANSYS
-          icon: ''
+          icon: 'icon-ansys'
     - title: CAD Design
       description:
         - name: Inventor
-          icon: ''
+          icon: 'icon-inventor'
         - name: SolidWorks
-          icon: ''
+          icon: 'icon-solidworks'
         - name: AutoCAD
-          icon: ''
+          icon: 'icon-autodesk'
 
 - title: Education
   type: timeline

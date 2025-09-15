@@ -105,6 +105,90 @@
     height: 18px;
     width: 18px;
     vertical-align: middle;
+    background-position: center;
+}
+
+.icon-autodesk {
+    background: url('../icons/autodesk.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+}
+
+.icon-codeware {
+    background: url('../icons/codeware.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    -webkit-filter: invert(.75);
+    filter: invert(.75);
+    background-position: center;
+}
+
+.icon-ansys {
+    background: url('../icons/ansys.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+}
+
+.icon-solidworks {
+    background: url('../icons/solidworks.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+}
+
+.icon-prg {
+    background: url('../icons/prgfull.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+    -webkit-filter: invert(.75);
+    filter: invert(.75);
+}
+
+.icon-hexagon {
+    background: url('../icons/hexagon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    background-position: center;
+}
+
+.icon-inventor {
+    background: url('../icons/inventor.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
 }
 
 /* For front page animation */
