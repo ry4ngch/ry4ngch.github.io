@@ -16,10 +16,25 @@
   {%- endif %}
 </script>
 
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.favicon_url | default: author.avatar | relative_url}}">
+<link rel="icon" type="image/x-icon" href="{{ site.favicon_url | default: author.avatar | relative_url}}">
+
+<!-- Preconnect & DNS Prefetch -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+<!-- Preload + async apply -->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" crossorigin onload="this.onload=null;this.rel='stylesheet'">
+
+<!-- Fallback for SEO & no-JS -->
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+</noscript>
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}

@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Ryan Goh
+seo_title: Ryan Goh Chuang Hong
 email: ry4n.gch@gmail.com
 url: "https://ry4ngch.github.io"
 lang: "en"
