@@ -38,7 +38,7 @@
 
 #page-title, .page__lead {
     position: relative;
-    top: 8px;
+    /*top: 8px;*/
 }
 
 /* .page__hero--overlay {
