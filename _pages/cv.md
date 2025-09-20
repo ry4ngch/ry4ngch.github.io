@@ -10,5 +10,5 @@ toc:
   show_profile: true
 toc_sticky: true
 
-classes: wide
+# classes: wide
 ---
