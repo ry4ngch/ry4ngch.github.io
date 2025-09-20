@@ -10,3 +10,12 @@
       @include yiq-contrasted($active-color);
     }
   }
+
+@media (max-width: 64em) {
+  .resume-toc {
+    label {
+      display: block;
+      margin: 0;
+    }
+  }
+}

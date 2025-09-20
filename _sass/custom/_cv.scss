@@ -6,6 +6,43 @@
   padding: 1em;
 }
 
+.resume-page-sidebar {
+  width: calc(100% - 200px);
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+.resume-page {
+  width: calc(100% - 300px);
+}
+
+.wide { 
+  .resume-page {
+      padding-inline-end: 0;
+      margin: 0 auto;
+      width: calc(100% - 200px);
+  }
+
+  .resume-wrapper {
+    max-width: 100%;
+  }
+}
+
+.resume-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.resume-detail-section {
+  flex: 0 0 70%;
+}
+
+.resume-profile-section {
+  flex: 0 0 30%;
+}
+
 .anchor-title {
   color: #222;
   letter-spacing: -0.5px;
@@ -202,7 +239,7 @@ progress {
 
 /** Pill */
 .pill-tag {
-	font-size: 14px;
+	font-size: 14px !important;
 	font-family: system-ui;
 	padding: 0.5em 1em;
 	margin: 0.25em;
@@ -277,23 +314,57 @@ progress {
   }
 }
 
-@media screen and (max-width: 64em){
-  #main.resume-contents {
-    article.page {
-      float: right;
-      width: 65%;
-    }
 
-    .sidebar {
-      float: left;
-      width: 30%;
-      overflow-x: scroll;
-    }
+//table
+
+.scroll-table {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+}
+
+.scroll-table thead,
+.scroll-table tbody {
+  display: block;
+}
+
+.scroll-table tbody {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+
+.scroll-table th,
+.scroll-table td {
+  padding: 8px;
+  text-align: left;
+
+  &:last-child{
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 64em){
+
+  .resume-page {
+    width: 100%;
   }
 
   #js_sidebar {
-    display: none;
+    float: none;
   }
+}
+
+@media screen and (max-width: 50em){
+  .resume-contents {
+    flex-direction: column;
+  }
+}
+
+.wide #js_sidebar {
+  width: 100%;
 }
 
 #js_sidebar {

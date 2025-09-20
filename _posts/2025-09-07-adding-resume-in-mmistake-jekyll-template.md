@@ -24,6 +24,39 @@ In this tutorial, I’ll walk you through how I added a custom resume layout to 
 ### Step 1: Define Resume Data in `_data/cv.yml`
 
 Start by creating a `_cv.yml` file in the `_data` directory. This file will hold all the content and structure for the resume components (e.g., profile, education, experience, skills, etc.).  
+
+Inside `_cv.yml`, the structure of each section should be as follow:
+```bash
+  - title: Some title 
+    region: profile #note: do not add this field if the content should be included on the right side
+    type: table # this indicates the type of the liquid partial to apply to each content
+    content:
+      -
+```
+
+**Note:** Each section should consist of title, type and contents. The region field is **OPTIONAL** and this field determines if the contents should be added into the left or right side of the resume.
+{: .notice--info}
+
+The content details depends on the type of liquid partial applied.
+For type `table` or `chart`, the following content fields are required:
+```bash
+  content:
+    - name: Some title
+    - value: Some value
+    - icon: Some icon # Optional for table
+```
+
+For type `timeline` and `basic`, the following content fields are required:
+```bash
+  contents:
+    - title: Some title
+      institution: Some institution # available for timeline only
+      year: Some date or year # available for timeline only
+      description: Some description
+```
+**Note:** For the description, a list of sub description can also be included.
+{: .notice--info}
+
 You can download a sample version of this file from my [GitHub repository](https://github.com/ry4ngch/ry4ngch.github.io).
 
 ---
@@ -62,10 +95,9 @@ The resume consists of multiple components, each implemented as a separate Liqui
 
 - **`basic.liquid`** – Renders simple list-type sections.
 - **`chart.liquid`** – Displays bar chart visualizations.
-- **`nav.liquid`** – Generates a dynamic navigation menu (currently in development).
+- **`nav.liquid`** – Generates a dynamic navigation menu
 - **`pill-tag.liquid`** – Used to display skills or tags as styled pill elements.
 - **`progress-bar.liquid`** – Animates circular progress bars for skill levels or certifications (optional and not fully integrated).
-- **`profile.liquid`** – Displays the sidebar with contact info, languages, and skills.
 - **`timeline.liquid`** – Renders experience and education history in a vertical timeline format.
 
 ---
@@ -92,11 +124,11 @@ To enable the TOC sidebar, include the following in the front matter of your `cv
 ```text
 toc: 
   title: Resume
-  show_profile: false
+  show_profile: true
 toc_sticky: true
 ```
 
-**Note:** By default, `show_profile` is set to false. There are some known issues related to this feature that are currently being worked on. The table of contents is automatically generated based on the section titles defined in the `cv.yml` file.
+**Note:** By default, `show_profile` is set to false. The table of contents is automatically generated based on the section titles defined in the `cv.yml` file.
 {: .notice--info}
 
 ---

@@ -1,5 +1,5 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
+  <div class="sidebar resume-page-sidebar">
     {% assign author = page.author | default: page.authors[0] | default: site.author %}
     {% assign author = site.data.authors[author] | default: author %}
     
@@ -12,34 +12,20 @@
           </a>
         </div>
       {% endif %}
+
+      <div class="author__content">
+        <h3 class="author__name p-name" itemprop="name">
+          <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
+        </h3>
+        {% if author.bio %}
+          <div class="author__bio p-note" itemprop="description">
+            {{ author.bio | markdownify }}
+          </div>
+        {% endif %}
+      </div>
     
       <div class="author__urls-wrapper">
         <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
-        <ul class="resume-profile">
-          {% assign profile_datas = site.data.cv | where: 'region', 'profile' %}
-
-          {% for pd in profile_datas %}
-            <h5 class="anchor-title" id="{{pd.title | replace: ' ', '_'}}">{{pd.title | upcase}}</h5>
-            {% case pd.type %}
-              {% when 'table' %}
-                {% include resume/table.liquid %}
-              {% when 'chart' %}
-                {% include resume/chart.liquid %}
-              {% when 'progress' %}
-                {% include resume/progress-bar.liquid %}
-              {% when 'pill' %}
-                {% for content in pd.contents %}
-                  <section class="pill-section">
-                    <h6 class="pill-title">{{content.title}}</h6>
-                    {% include resume/pill-tag.liquid %}
-                  </section>
-                {% endfor %}
-              {% else %}
-                {{ profile_data.contents }}
-            {% endcase %}
-          {% endfor %}
-          
-        </ul>
       </div>
     </div>
     

@@ -13,9 +13,7 @@ layout: default
 {% endif %}
 
 <div id="main" role="main" class="resume-contents">
-  {% include resume/profile.liquid %}
-
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+  <article class="resume-page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
@@ -58,37 +56,68 @@ layout: default
               <p class="resume-summary">{{ page.summary }}</p>
             {% endif %}
           </header>
-        
-          <article>
-            <div class="resume_wrapper">
-              {% for entry in site.data.cv %}
-                <div class="">
-                  {% if entry.region != 'profile' %}
-                    {% if entry.title %}
-                      <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
-                        {% if entry.icon %}
-                          <i class='fa-solid {{entry.icon}}'></i>
-                        {% endif %}
-                        {{ entry.title | upcase }}
-                      </h3>
-                    {% endif %}
-                  {% endif %}
-                  <div>
+          
+          <div class="resume-contents">
+            <article class="resume-profile-section">
+              <ul class="resume-profile">
+                {% assign profile_datas = site.data.cv | where: 'region', 'profile' %}
+          
+                {% for pd in profile_datas %}
+                  <h5 class="anchor-title" id="{{pd.title | replace: ' ', '_'}}">{{pd.title | upcase}}</h5>
+                  {% case pd.type %}
+                      {% when 'table' %}
+                      {% include resume/table.liquid %}
+                      {% when 'chart' %}
+                      {% include resume/chart.liquid %}
+                      {% when 'progress' %}
+                      {% include resume/progress-bar.liquid %}
+                      {% when 'pill' %}
+                      {% for content in pd.contents %}
+                          <section class="pill-section">
+                          <h6 class="pill-title">{{content.title}}</h6>
+                          {% include resume/pill-tag.liquid %}
+                          </section>
+                      {% endfor %}
+                      {% else %}
+                      {{ profile_data.contents }}
+                  {% endcase %}
+                  {% endfor %}
+                  
+              </ul>
+            </article>
+          
+            <article class="resume-detail-section">
+              <div class="resume_wrapper">
+                {% for entry in site.data.cv %}
+                  <div class="">
                     {% if entry.region != 'profile' %}
-                      {% case entry.type %}
-                        {% when 'timeline' %}
-                          {% include resume/timeline.liquid %}
-                        {% when 'basic' %}
-                          {% include resume/basic.liquid %}
-                        {% else %}
-                          {{ entry.contents }}
-                      {% endcase %}
+                      {% if entry.title %}
+                        <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
+                          {% if entry.icon %}
+                            <i class='fa-solid {{entry.icon}}'></i>
+                          {% endif %}
+                          {{ entry.title | upcase }}
+                        </h3>
+                      {% endif %}
                     {% endif %}
+                    <div>
+                      {% if entry.region != 'profile' %}
+                        {% case entry.type %}
+                          {% when 'timeline' %}
+                            {% include resume/timeline.liquid %}
+                          {% when 'basic' %}
+                            {% include resume/basic.liquid %}
+                          {% else %}
+                            {{ entry.contents }}
+                        {% endcase %}
+                      {% endif %}
+                    </div>
                   </div>
-                </div>
-              {% endfor %}
-            </div>
-          </article>
+                {% endfor %}
+              </div>
+            </article>
+          </div>
+          
         </div>
       </section>
 
