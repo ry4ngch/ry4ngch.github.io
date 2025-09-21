@@ -18,4 +18,12 @@
       margin: 0;
     }
   }
+
+  #js_sidebar .nav__list input:checked ~ .nav__items {
+    margin-top: 0;
+
+    a {
+      padding: 0;
+    }
+  }
 }

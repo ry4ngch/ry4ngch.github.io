@@ -3,7 +3,7 @@ feature_row1:
     alt: "ASME-PVDE"
     title: "ASME-PVDE"
     excerpt: "An automated Excel VBA tool for pressure vessel design, integrating ASME code calculations for fast, accurate engineering analysis"
-    url: "https://ry4ngch.github.io/blog/ASME-PVDE-feature-overview/"
+    url: "/blog/ASME-PVDE-feature-overview/"
     btn_label: "Read More"
     btn_class: "btn--primary"
     classes:
@@ -13,7 +13,7 @@ feature_row2:
     alt: "react-boilerplates"
     title: "React Boilerplates"
     excerpt: "Kickstart your web projects with optimized React boilerplates for faster, cleaner development"
-    url: "https://github.com/ry4ngch/React-Boilerplates"
+    url: "/blog/react-boilerplate-guide/"
     btn_label: "Read More"
     btn_class: "btn--primary"
     classes:

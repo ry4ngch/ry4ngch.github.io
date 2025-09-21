@@ -3,9 +3,7 @@ title: "Integrating a Resume Layout into the Minimal Mistakes Jekyll Theme"
 date: 2025-09-07T14:53:00+08:00
 layout: single
 categories: 
-  - Jekyll
-  - Ruby
-  - Static Site
+  - blog
 tags: 
   - Jekyll
   - Ruby

@@ -3,9 +3,7 @@ title: "React Boilerplate: A Quick Guide to Kickstart Your Next Project"
 date: 2025-04-11T21:05:00+08:00
 layout: single
 categories: 
-  - React
-  - Boilerplate
-  - Web Development
+  - blog
 tags: 
   - react
   - boilerplate
