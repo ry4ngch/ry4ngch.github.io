@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem "minimal-mistakes-jekyll"
+
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
@@ -13,6 +15,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
+  gem "jekyll-sass-converter", "1.5.2"
   gem "jekyll-seo-tag"
   # gem "jekyll-algolia" # Uncomment if switching to Algolia-powered search
 end

@@ -89,30 +89,33 @@ layout: default
             <article class="resume-detail-section">
               <div class="resume_wrapper">
                 {% for entry in site.data.cv %}
-                  <div class="">
-                    {% if entry.region != 'profile' %}
-                      {% if entry.title %}
-                        <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
-                          {% if entry.icon %}
-                            <i class='fa-solid {{entry.icon}}'></i>
-                          {% endif %}
-                          {{ entry.title | upcase }}
-                        </h3>
-                      {% endif %}
-                    {% endif %}
-                    <div>
-                      {% if entry.region != 'profile' %}
-                        {% case entry.type %}
-                          {% when 'timeline' %}
-                            {% include resume/timeline.liquid %}
-                          {% when 'basic' %}
-                            {% include resume/basic.liquid %}
-                          {% else %}
-                            {{ entry.contents }}
-                        {% endcase %}
-                      {% endif %}
+                  {% if entry.region != 'profile' %}
+                    <div class="section-div">
+                        {% if entry.title %}
+                          <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
+                            {% if entry.icon %}
+                              <i class='fa-solid {{entry.icon}}'></i>
+                            {% endif %}
+                            {{ entry.title | upcase }}
+                            <span class="collapse-tool"
+                                  onclick="toggleDetail(event, '{{ entry.title | replace: ' ', '_' }}')">
+                            </span>
+                          </h3>
+                        {% endif %}
+                      <div class="section-info expand-section">
+                          <div class="section-inner">
+                            {% case entry.type %}
+                              {% when 'timeline' %}
+                                {% include resume/timeline.liquid %}
+                              {% when 'basic' %}
+                                {% include resume/basic.liquid %}
+                              {% else %}
+                                {{ entry.contents }}
+                            {% endcase %}
+                          </div>
+                      </div>
                     </div>
-                  </div>
+                  {% endif %}
                 {% endfor %}
               </div>
             </article>

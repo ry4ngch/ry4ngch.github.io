@@ -18,13 +18,21 @@ const loadTimelineLine = () => {
           // Add the bottom margin to the height
           itemHeight += parseFloat(itemComputedStyle.marginBottom);
           
-          divHeight += itemHeight + 19;
+          divHeight += itemHeight + 7;
         });
 
         current_timeline_line.style.height = divHeight + 'px';
       }
     });
   }
+}
+
+const toggleDetail = (event, contentId) => {
+  const parentEl = document.getElementById(contentId).parentElement;
+  console.log(event.target);
+  event.target.classList.toggle('close');
+  const detailInfoEl = parentEl.querySelector('.section-info');
+  detailInfoEl.classList.toggle('expand-section');
 }
 
 window.addEventListener('DOMContentLoaded', function() {

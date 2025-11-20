@@ -79,6 +79,8 @@
           icon: 'icon-prg'
         - name: ANSYS
           icon: 'icon-ansys'
+        - name: PrePoMax
+          icon: 'icon-prepomax'
     - title: CAD Design
       description:
         - name: Inventor
@@ -112,7 +114,7 @@
   contents:
     - title: Mechanical Engineer Cum Project Engineer
       institution: DFINITI Technologies Sdn Bhd
-      year: May 2021 - Current
+      year: May 2021 - Nov 2025
       description:
         - Designed and executed mechanical stress analysis and engineering for over 60 ASME Section VIII Division 1 pressure vessels and electric immersion heaters, including hands-on development of detailed calculation reports, 2D/3D CAD models, and structural integrity checks to ensure full code compliance.
         - Built and deployed a design automation tool using VBA and Power Query, directly developing logic and coding the tool to reduce proposal turnaround time by 40% and improve cost estimation accuracy.
