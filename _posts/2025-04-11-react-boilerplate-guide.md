@@ -102,6 +102,30 @@ One of the standout features in the **react_basic** boilerplate is the inclusion
 
 > While controlling animations and effects in React is relatively straightforward, it often leads to managing multiple state variables, which can clutter your codebase. Salient abstracts this complexity, giving you more time to focus on building great features.
 
+### Built-In Components:
+
+The Salient library itself contains a variety of built-in ready to go **REACT** components, these include:
+
+- NavBar (With Multiple themes and 2 different display option)
+- Accordian (with multiple built-in customization option)
+- List (With highlight animation and 2 themes)
+- Cards (With Multiple Animation, including flip, scale and tilt)
+- **Form UI:** Numeric Field, Dropdown Field, Text Field, Form Affix and Slider. Form Affix is a component for appending or prepending icons to the form field. This option is available for all the form UI component except for slider. Icons are also built-in to the library without requiring for external imports.
+- Modal (With Multi Page Toggling)
+- Pagination (For Tables)
+- Tabs (With 2 Different built-in display style)
+- Table (With Draggable options, filtering and column visibility toggling).
+- Buttons (toggle switch, checkboxes, themed buttons)
+- Breadcrumbs (with 4 built-in formats, allowing for multiple different customization)
+- Treeview (multilevel view and available in 2 different themes)
+- Banner (with multiple themes)
+- Toolbar (with tooltips, and built-in to be configurable to vertical or horizontal orientation )
+- Timeline (configurable to horizontal or vertical orientation)
+- **Charts:** Bar Chart (With multiple themes)
+- Sidebar
+
+> **Note:** All the mentioned components are custom built without any other libraries, making it suitable for producing a lightweight application. Although no external library is required, the salient library has been tested to be able to integrate with other external library with minimal configuration.
+
 ---
 
 ## Conclusion
@@ -115,6 +139,10 @@ Choosing the right boilerplate for your React project depends on your goals and 
 
 You can find all of these boilerplates on GitHub here:  
 👉 [React Boilerplates](https://github.com/ry4ngch/React-Boilerplates)
+
+If you wish to see the Salient library in action, click on the link below to the demo application:
+<br/>
+👉 [Salient Demo App](https://salient-react-demo.vercel.app/)
 
 Whatever your choice, these boilerplates serve as a solid foundation for building your next React project.
 

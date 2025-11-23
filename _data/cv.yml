@@ -71,11 +71,15 @@
       description: 
         - name: PVElite
           icon: 'icon-hexagon'
+        - name: CAESAR II
+          icon: 'icon-hexagon'
         - name: Codeware Compress
           icon: 'icon-codeware'
     - title: Finite Element Analysis
       description: 
-        - name: NozzlePRO PRG
+        - name: NozzlePRO
+          icon: 'icon-prg'
+        - name: FEPipe
           icon: 'icon-prg'
         - name: ANSYS
           icon: 'icon-ansys'
