@@ -123,6 +123,8 @@ The Salient library itself contains a variety of built-in ready to go **REACT** 
 - Timeline (configurable to horizontal or vertical orientation)
 - **Charts:** Bar Chart (With multiple themes)
 - Sidebar
+- Grid (Similar to latest Bootstrap Grid system)
+- Badges (With multiple themes)
 
 > **Note:** All the mentioned components are custom built without any other libraries, making it suitable for producing a lightweight application. Although no external library is required, the salient library has been tested to be able to integrate with other external library with minimal configuration.
 

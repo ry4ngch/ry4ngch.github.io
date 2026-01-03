@@ -116,6 +116,23 @@
   type: timeline
   icon: 'fa-briefcase'
   contents:
+    - title: Senior Software Developer | Program Specialist
+      institution: TalentCloud Sdn Bhd
+      year: Dec 2025 - Present
+      description:
+        - Led end-to-end development of HRMS, including backend APIs, frontend UI/UX, and database design.
+        - Accelerated onboarding of complex legacy codebase, taking ownership of urgent bug fixes while learning system architecture and business logic.
+        - Delivered new module development, including high-priority modules such as loan calculation (supporting multiple user policies) and bulk-document upload (with real-time validation and multi-level access control).
+        - Provided technical leadership in refactoring legacy systems, improving stability, maintainability, and code quality.
+        - Defined and maintained pre-design and code architecture documentation to ensure scalable and maintainable development.
+        - Engaged directly with end users through site meetings to gather technical requirements and drive solution design.
+        - Prioritized multiple development tasks, balancing client deadlines, bug fixes, and new module delivery.
+        - Oversaw code quality and best practices, conducting code reviews and mentoring junior developers.
+        - Managed development workflow and issue resolution using ClickUp.
+        - Ensured secure, reliable delivery through Git version control, structured releases, and continuous system improvements.
+        - Designed system components with readiness for scheduled/background processing, supporting future cron-job development.
+        - Preparing system architecture for data orchestration and AI-driven automation, exploring tools such as Airflow and dbt.
+
     - title: Mechanical Engineer Cum Project Engineer
       institution: DFINITI Technologies Sdn Bhd
       year: May 2021 - Nov 2025
