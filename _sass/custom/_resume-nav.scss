@@ -1,27 +1,73 @@
-.resume-toc {
-    font-family: $sans-serif-narrow;
-    color: $gray;
-    background-color: $background-color;
-    -webkit-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+.resume-toc, #js_sidebar {
+  font-family: $sans-serif-narrow;
+  background-color: $background-color;
+  box-shadow: $box-shadow; // Consolidating the two shadow definitions
+  border-radius: 5px;
   
-    // Scrollspy marks toc items as .active when they are in focus
-    .active a {
-      @include yiq-contrasted($active-color);
-    }
+  // Header styling
+  .nav__title {
+    background: #383A45;
+    color: #ddd;
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
   }
 
-@media (max-width: 64em) {
-  .resume-toc {
-    label {
-      display: block;
-      margin: 0;
+  // List structure
+  ul, .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding-left: .3em;
+    transition: all 0.2s ease;
+
+    &:hover, &.active-toc {
+      border-left: 2px solid #333;
+      background-color: rgba($gray, 0.1);
+      color: #333;
     }
+
+    // Active state applied via JS
+    // &.active-toc, .active-toc {
+    //   a, .nav__sub-title {
+    //     @include yiq-contrasted($active-color);
+    //     font-weight: bold;
+    //   }
+    // }
+  }
+
+  // Anchor & Typography
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav__sub-title {
+    font-weight: normal;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+// Layout overrides
+.wide #js_sidebar {
+  width: 100%;
+}
+
+// Responsive adjustments
+@media (max-width: 64em) {
+  .resume-toc label {
+    display: block;
+    margin: 0;
   }
 
   #js_sidebar .nav__list input:checked ~ .nav__items {
     margin-top: 0;
-
+    
     a {
       padding: 0;
     }

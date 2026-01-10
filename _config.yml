@@ -36,6 +36,9 @@ date_format: "%Y-%m-%d"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
 # remote_theme: mmistakes/minimal-mistakes@4.27.3
 theme: minimal-mistakes-jekyll
 # Outputting
@@ -43,7 +46,9 @@ permalink: /:categories/:title/
 #paginate: 5 # amount of posts to show
 #paginate_path: /page:num/
 timezone: Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+sass:
+  style: compressed
+  
 # Using Pagination V2. Therefore paginate and paginate_path will be disabled above
 pagination:
   enabled: true
@@ -88,7 +93,9 @@ author:
   name   : "Ryan Goh"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Mechanical Engineer/Web Developer"
-  location: "Malaysia"
+  location: "Petaling Jaya"
+  region: "Selangor"
+  country: "Malaysia"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

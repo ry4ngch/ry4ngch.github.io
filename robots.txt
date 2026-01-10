@@ -3,8 +3,12 @@ layout: null
 ---
 User-agent: *
 Allow: /
+Allow: /cv/
+Allow: /portfolio/
 Disallow: /assets/css/
 Disallow: /assets/js/
 Disallow: /vendor/
+Disallow: /tag/
+Disallow: /category/
 
 Sitemap: {{ site.url }}/sitemap.xml

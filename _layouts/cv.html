@@ -2,28 +2,19 @@
 layout: default
 ---
 
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
-{% if page.breadcrumbs != null %}
-  {% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+{%- assign cv_data = site.data.cv -%}
+{%- assign user_data = cv_data | first -%}
 
 <div id="main" role="main" class="resume-contents">
-  <article class="resume-page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
-
+  <article class="resume-page" itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{{ user_data.user }}">
+    
     <div class="page__inner-wrap">
       <section class="page__content" itemprop="text">
+        
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="resume-toc">
+            <nav class="resume-toc" aria-label="Resume sections">
               {% include resume/nav.liquid %}
             </nav>
           </aside>
@@ -32,27 +23,17 @@ layout: default
         <div class="resume-wrapper">
           <header class="resume-header">
             <h1 class="resume-title">
-              {{ site.data.cv[0].user | upcase }}
+              {{ user_data.user | upcase }}
               {% if page.cv_pdf %}
-                <a
-                  {% if page.cv_pdf contains '://' %}
-                    href="{{ page.cv_pdf }}"
-                  {% else %}
-                    href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-                  {% endif %}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="resume-file-link"
-                  title="Download Resume"
-                >
-                  <i class="fa-solid fa-file-pdf"></i>
+                <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+                   target="_blank" rel="noopener noreferrer" class="resume-file-link" title="Download PDF">
+                  <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
                 </a>
               {% endif %}
             </h1>
-            {% if page.summary and page.summary_title %}
-              <h3 class="anchor-title" id="{{page.summary_title | replace: ' ', '_'}}">{{page.summary_title | upcase}}</h3>
-            {% endif %}
+            
             {% if page.summary %}
+              <h3 class="anchor-title" id="{{ page.summary_title | slugify }}">{{ page.summary_title | upcase }}</h3>
               <p class="resume-summary">{{ page.summary }}</p>
             {% endif %}
           </header>
@@ -60,71 +41,52 @@ layout: default
           <div class="resume-contents">
             <article class="resume-profile-section">
               <ul class="resume-profile">
-                {% assign profile_datas = site.data.cv | where: 'region', 'profile' %}
-          
+                {%- assign profile_datas = cv_data | where: 'region', 'profile' -%}
                 {% for pd in profile_datas %}
-                  <h5 class="anchor-title" id="{{pd.title | replace: ' ', '_'}}">{{pd.title | upcase}}</h5>
+                  <h5 class="anchor-title" id="{{ pd.title | slugify }}">{{ pd.title | upcase }}</h5>
                   {% case pd.type %}
-                      {% when 'table' %}
-                      {% include resume/table.liquid %}
-                      {% when 'chart' %}
-                      {% include resume/chart.liquid %}
-                      {% when 'progress' %}
-                      {% include resume/progress-bar.liquid %}
-                      {% when 'pill' %}
+                    {% when 'table' %}{% include resume/table.liquid %}
+                    {% when 'chart' %}{% include resume/chart.liquid %}
+                    {% when 'pill' %}
                       {% for content in pd.contents %}
-                          <section class="pill-section">
-                          <h6 class="pill-title">{{content.title}}</h6>
+                        <section class="pill-section">
+                          <h6 class="pill-title">{{ content.title }}</h6>
                           {% include resume/pill-tag.liquid %}
-                          </section>
+                        </section>
                       {% endfor %}
-                      {% else %}
-                      {{ profile_data.contents }}
                   {% endcase %}
-                  {% endfor %}
-                  
+                {% endfor %}
               </ul>
             </article>
           
             <article class="resume-detail-section">
               <div class="resume_wrapper">
-                {% for entry in site.data.cv %}
-                  {% if entry.region != 'profile' %}
-                    <div class="section-div">
-                        {% if entry.title %}
-                          <h3 class="anchor-title" id="{{entry.title | replace: ' ', '_'}}">
-                            {% if entry.icon %}
-                              <i class='fa-solid {{entry.icon}}'></i>
-                            {% endif %}
-                            {{ entry.title | upcase }}
-                            <span class="collapse-tool"
-                                  onclick="toggleDetail(event, '{{ entry.title | replace: ' ', '_' }}')">
-                            </span>
-                          </h3>
-                        {% endif %}
+                {% for entry in cv_data %}
+                  {% if entry.region != 'profile' and entry.title %}
+                    {% assign entry_id = entry.title | slugify %}
+                    <section class="section-div" itemprop="hasCredential">
+                      <h3 class="anchor-title" id="{{ entry_id }}">
+                        {% if entry.icon %}<i class='fa-solid {{ entry.icon }}' aria-hidden="true"></i>{% endif %}
+                        {{ entry.title | upcase }}
+                        <span class="collapse-tool" onclick="toggleDetail(event, '{{ entry_id }}')"></span>
+                      </h3>
                       <div class="section-info expand-section">
-                          <div class="section-inner">
-                            {% case entry.type %}
-                              {% when 'timeline' %}
-                                {% include resume/timeline.liquid %}
-                              {% when 'basic' %}
-                                {% include resume/basic.liquid %}
-                              {% else %}
-                                {{ entry.contents }}
-                            {% endcase %}
-                          </div>
+                        <div class="section-inner">
+                          {% case entry.type %}
+                            {% when 'timeline' %}{% include resume/timeline.liquid %}
+                            {% when 'basic' %}{% include resume/basic.liquid %}
+                            {% else %}{{ entry.contents }}
+                          {% endcase %}
+                        </div>
                       </div>
-                    </div>
+                    </section>
                   {% endif %}
                 {% endfor %}
               </div>
             </article>
           </div>
-          
         </div>
       </section>
-
-  
-  
+    </div>
+  </article>
 </div>
-

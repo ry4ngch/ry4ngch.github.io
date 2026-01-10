@@ -1,10 +1,14 @@
 {% if page.toc %}
   <div class="sidebar sticky" id="js_sidebar">
-    <nav class="nav__list">
-      {% if page.toc.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.toc.title }}</h3>{% endif %}
+    <nav class="nav__list" aria-label="Resume Navigation">
+      {% if page.toc.title %}
+        <h3 class="nav__title" style="padding-left: 0;">{{ page.toc.title }}</h3>
+      {% endif %}
       <input id="ac-toc" name="accordion-toc" type="checkbox" />
       <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
-      <ul class="nav__items" id="sidebar__nav-items" data-show-profile="{{page.toc.show_profile | default: false}}">
+      <ul class="nav__items" id="sidebar__nav-items" 
+          data-show-profile="{{ page.toc.show_profile | default: false }}"
+          style="min-height: 200px;"> 
       </ul>
     </nav>
   </div>

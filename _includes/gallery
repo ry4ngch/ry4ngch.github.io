@@ -26,7 +26,8 @@
       </a>
     {% else %}
       <img src="{{ img.image_path | relative_url }}"
-           alt="{% if img.alt %}{{ img.alt | escape_once }}{% endif %}">
+           alt="{% if img.alt %}{{ img.alt | escape_once }}{% endif %}"
+           loading="lazy">
     {% endif %}
   {% endfor %}
   {% if include.caption %}

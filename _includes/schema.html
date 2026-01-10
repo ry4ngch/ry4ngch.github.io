@@ -2,14 +2,46 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": {{ site.name | default: site.author.name | jsonify }},
+    {%- assign cv_data = site.data.cv -%}
+    
+    {%- comment -%} Pulling Experience for Job Title {%- endcomment -%}
+    {%- assign current_job = cv_data | where: "title", "Experience" | map: "contents" | first | first -%}
+    
+    {%- comment -%} Pulling Location from the Contact Table {%- endcomment -%}
+    {%- assign contact_info = cv_data | where: "title", "Contact" | map: "contents" | first -%}
+    {%- assign cv_location = contact_info | where: "name", "Location" | map: "value" | first -%}
+  
+    "name": {{ site.name | default: site.author.name | default: "-" | jsonify }},
     "url": {{ '/' | absolute_url | jsonify }},
-    "description": {{ site.description | jsonify }},
-    "jobTitle": "Mechanical Engineer & Web Developer",
+    "jobTitle": {{ current_job.title | default: "-" | jsonify }},
+    "worksFor": {
+      "@type": "Organization",
+      "name": {{ current_job.institution | default: "-" | jsonify }}
+    },
+    "description": {{ site.description | default: "-" | jsonify }},
     "image": {{ site.author.avatar | absolute_url | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      {%- comment -%} 
+        Locality uses cv_location if present, 
+        otherwise falls back to site.author.location 
+      {%- endcomment -%}
+      "addressLocality": {{ cv_location | default: site.author.location | default: "-" | jsonify }},
+      "addressRegion": {{ site.author.region | default: "-" | jsonify }},
+      "addressCountry": {{ site.author.country | default: "-" | jsonify }}
+    },
     {%- assign social_links = site.author.links | map: "url" -%}
-    {%- if social_links.size > 0 -%}
-    "sameAs": {{ social_links | jsonify }}
-    {%- endif %}
+    "sameAs": {{ social_links | default: "[]" | jsonify }},
+    
+    {%- assign skills_list = cv_data | where: "title", "Skills" | map: "contents" | first -%}
+    "knowsAbout": [
+      {%- if skills_list -%}
+        {%- for group in skills_list -%}
+          {%- for skill in group.description -%}
+            {{ skill.name | jsonify }}{% unless forloop.last and forloop.parentloop.last %},{% endunless %}
+          {%- endfor -%}
+        {%- endfor -%}
+      {%- endif -%}
+    ]
   }
   </script>

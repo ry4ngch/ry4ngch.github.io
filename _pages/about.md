@@ -1,27 +1,47 @@
 ---
 permalink: /about/
 title: "About Ryan Goh"
-excerpt: "Learn more about Ryan Goh, a Mechanical Engineer and Web Developer specializing in data analytics and machine learning."
+excerpt: "The professional journey of Ryan Goh: A Mechanical Engineer and Web Developer bridging the gap between physical engineering and digital automation."
+last_modified_at: 2024-05-20
 ---
 
-Hi! I'm **Ryan Goh**, a Mechanical Engineer based in Malaysia with a strong interest in data analytics, applied machine learning, and web development.
+Hi! I'm **Ryan Goh**, a Mechanical Engineer based in Malaysia. My career is defined by a unique blend of traditional engineering discipline and modern software development expertise. 
 
-Before transitioning into engineering, I worked as a web developer at a startup, where I focused on UI/UX design and API development. That early experience laid the foundation for my passion for building practical, user-focused digital tools. 
+I specialize in building tools that live at the intersection of **Mechanical Design, Data Analytics, and Web Architecture.**
 
-Today, I enjoy working at the intersection of engineering, data, and software — applying analytical thinking to solve real-world problems and build useful applications like [ASME-PVDE](/blog/ASME-PVDE-feature-overview/).
+## The Bridge Between Two Worlds
 
-## Professional Focus
+My journey began in the fast-paced **startup ecosystem as a Web Developer**, where I honed my skills in UI/UX design and API development. This foundation in software architecture allows me to approach mechanical engineering problems with a "digital-first" mindset. 
 
-- 🔍 **Data Analytics:** Extracting insights from complex engineering data using Python, SQL, and PowerBI.
-- 🤖 **Machine Learning:** Applying ML techniques for predictive maintenance, modeling, and automation.
-- 🌐 **Web Development:** Building responsive full-stack web applications with React, Node.js, and Jekyll.
-- 🛠️ **Engineering Mindset:** Applying systematic problem-solving and design thinking from my mechanical engineering background to the digital space.
+Today, I apply that analytical thinking to solve real-world problems—whether it’s automating complex code calculations for pressure vessels or building scalable React frameworks.
 
-## Explore Ryan's Work
 
-If you're interested in my professional journey or technical projects, feel free to explore:
 
-- 🔗 [Projects](/portfolio/) – A showcase of the work I’ve done in analytics, ML, and web development.
-- 📄 [Posts](/posts/) – Notes, tutorials, and blog-style posts about what I'm currently learning.
-- 📁 [GitHub](https://github.com/ry4ngch) – Open-source repositories I’ve built or contributed to.
-- 💼 [Resume](/cv/) – My detailed professional experience and education.
+## Professional Focus & Core Competencies
+
+### 🔍 Engineering Data Analytics
+I leverage **Python (Pandas, NumPy)** and **R** to extract actionable insights from complex engineering datasets. My goal is to transform raw technical data into predictive models that drive better design decisions.
+
+### 🤖 Applied Machine Learning
+I am passionate about applying ML techniques to the industrial sector, focusing on **Predictive Maintenance** and **Design Optimization** to improve the lifecycle of mechanical systems.
+
+### 🌐 Full-Stack Web Development
+With a background in startup development, I build responsive applications using **React, Webpack 5, and Node.js**. My current project, a [React Boilerplate Library](/portfolio/react-boilerplates/), focuses on creating optimized scaffolding for scalable front-end systems.
+
+### 🛠️ Mechanical Design & Automation
+I possess deep domain knowledge in **ASME Section VIII Division 1** and **PED** compliance. My flagship project, the [ASME-PVDE](/portfolio/asme-pvde/), demonstrates my ability to build enterprise-grade automation tools using Excel VBA and Power Query.
+
+
+
+---
+
+## Connect with Me
+
+I am always open to discussing new projects at the intersection of engineering and technology. Whether you want to talk about **ASME code compliance**, **React architecture**, or **data-driven engineering**, I’d love to connect.
+
+- 🔗 **Portfolio:** [View my Projects](/portfolio/)
+- 📄 **Blog:** [Technical Tutorials & Insights](/posts/)
+- 💼 **LinkedIn:** [Connect with Ryan Goh](https://www.linkedin.com/in/ryangch/)
+- 📁 **GitHub:** [Check out my Code](https://github.com/ry4ngch)
+
+> **Looking for a deep dive?** > View my full [Professional Experience]({{ '/cv/#experience' | relative_url }}) or check out my [Featured Projects]({{ '/portfolio/' | relative_url }}).
