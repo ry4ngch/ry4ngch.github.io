@@ -13,13 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ryan Goh
-seo_title: Ryan Goh Chuang Hong
+title: Ryan Goh | Mechanical Engineer & Web Developer
+masthead_title: "Ryan Goh"
+name: "Ryan Goh"
 email: ry4n.gch@gmail.com
 url: "https://ry4ngch.github.io"
 lang: "en"
 description: >- 
-  Mechanical engineer and aspiring engineering software developer sharing insights, tools, and tutorials on design, automation, and technology. 
+  Professional portfolio of Ryan Goh, a Mechanical Engineer and Web Developer specializing in data analytics and automation. 
 # this means to ignore newlines until "baseurl:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
@@ -105,7 +106,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "ttps://www.linkedin.com/in/ryangch/"
+      url: "https://www.linkedin.com/in/ryangch/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ry4ngch/"

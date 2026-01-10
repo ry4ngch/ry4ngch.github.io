@@ -1,30 +1,32 @@
 feature_row1:
   - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
-    alt: "ASME-PVDE"
-    title: "ASME-PVDE"
-    excerpt: "An automated Excel VBA tool for pressure vessel design, integrating ASME code calculations for fast, accurate engineering analysis"
+    alt: "ASME-PVDE Mechanical Engineering Design Tool by Ryan Goh"
+    title: "ASME-PVDE: Pressure Vessel Design Automation"
+    excerpt: "An automated engineering tool developed by **Ryan Goh** using Excel VBA. It streamlines pressure vessel design by integrating ASME Section VIII code calculations for rapid, high-accuracy analysis."
     url: "/blog/ASME-PVDE-feature-overview/"
-    btn_label: "Read More"
+    btn_label: "View Project Details"
     btn_class: "btn--primary"
     classes:
       - feature-row__card
+
 feature_row2:
   - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
-    alt: "react-boilerplates"
-    title: "React Boilerplates"
-    excerpt: "Kickstart your web projects with optimized React boilerplates for faster, cleaner development"
+    alt: "React Boilerplates and Web Development Kit by Ryan Goh"
+    title: "React Boilerplates & UI Frameworks"
+    excerpt: "A collection of optimized React boilerplates designed by **Ryan Goh** to kickstart web development projects with a focus on performance, clean architecture, and modern UI/UX."
     url: "/blog/react-boilerplate-guide/"
-    btn_label: "Read More"
+    btn_label: "Explore Boilerplates"
     btn_class: "btn--primary"
     classes:
       - feature-row__card
+
 feature_row3:
   - image_path: https://raw.githubusercontent.com/ry4ngch/VBA-Stack/main/Interpolation/Interpolation_Function_Comparison.png
-    alt: "VBA-stacks"
-    title: "VBA Stacks"
-    excerpt: "VBA subroutines and functions developed for engineering applications"
+    alt: "VBA Stacks for Engineering Applications by Ryan Goh"
+    title: "VBA Stacks for Engineering"
+    excerpt: "A repository of specialized VBA subroutines and functions tailored for mechanical engineering applications, including interpolation and data processing stacks."
     url: "https://github.com/ry4ngch/VBA-stack"
-    btn_label: "See the Github Repo"
+    btn_label: "View on GitHub"
     btn_class: "btn--primary"
     classes:
       - feature-row__card
