@@ -75,18 +75,56 @@
 
 .timeline {
   position: relative;
-  margin-top: 20px;
-  .line{
-    position: absolute;
-    background: #000;
-    height: 0%;
-    width: 1.5px;
-    top: 15px;
-    left: 8.5px;
-  }
-  &.condensed .line {
-    top: 7px;
-  }
+  padding-left: 48px;
+  --dot-size: 8px;
+  --dot-offset: 0.6em; /* distance from top of item to dot center */
+  --line-width: 1.5px;
+  --timeline-dot: #fff;
+  --timeline-dot-border: #000;
+  --timeline-dot-border-width: 1.5px;
+  --timeline-line: #000;
+  --timeline-offset-left: -32px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+/* Dot */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--timeline-offset-left) + (var(--dot-size) / 2));
+  top: var(--dot-offset);
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: var(--timeline-dot, #fff);
+  border: var(--timeline-dot-border-width, 1.5px) solid var(--timeline-dot-border, #000);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Vertical line segment */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--timeline-offset-left) + (var(--dot-size) / 2) - (var(--line-width) / 2));
+  top: calc(var(--dot-offset) + var(--dot-size));
+  bottom: calc(-1 * (var(--dot-offset) + var(--dot-size)));
+  width: var(--line-width);
+  background: var(--timeline-line, #000);
+}
+
+/* Remove line after last dot */
+.timeline-item:last-child::after {
+  display: none;
+}
+
+/* Remove extra spacing */
+.timeline-item:last-child {
+  padding-bottom: 0;
 }
 
 .timeline-year {
@@ -99,41 +137,6 @@
 
   > i {
     margin-right: 5px;
-  }
-}
-
-.timeline-item {
-  padding: 0px 15px 0px 30px;
-  position: relative;
-  margin-bottom: 15px;
-
-  
-  &:before {
-    content: "";
-    position: absolute;
-    background: #fff;
-    border: 1.5px solid #000;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    top: 1em;
-    left: 4px;
-  }
-  
-  &:last-child {
-    margin-bottom: 0; 
-  }
-
-  ul {
-    margin-bottom: 20px;
-  }
-
-  & > p {
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 

@@ -1,7 +1,4 @@
 <div class="timeline">
-    {% if entry.contents.size > 1 %}
-        <span class="line"></span>
-    {% endif %}
     {% for content in entry.contents %}
         <div class="timeline-item">
         <h3>{{content.title}} <small class="timeline-year"><i class="fa-solid fa-calendar"></i>{{content.year}}</small> </h3>
