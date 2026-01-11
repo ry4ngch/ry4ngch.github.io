@@ -1,6 +1,6 @@
 ---
 title: "ASME-PVDE: Pressure Vessel Design Automation"
-excerpt: "An automated engineering software developed by **Ryan Goh** using Excel VBA to streamline ASME Section VIII code compliance and design analysis."
+excerpt: "An automated engineering software that I've developed using Excel VBA to streamline ASME Section VIII code compliance and design analysis."
 header:
   overlay_image: /assets/images/pressure_vessel_teaser.webp
   caption: "Automated Pressure Vessel Design Environment"
@@ -37,8 +37,8 @@ gallery:
     image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/User_Defined_Mat_Definition.JPG
     alt: "Ryan Goh ASME-PVDE: Custom Material Definition Module"
     title: "User-Defined Materials"
-  - url: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/User_Defined_Mat_Definition.JPG
-    image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/User_Defined_Mat_Definition.JPG
+  - url: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Flange_Dialog.JPG
+    image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Flange_Dialog.JPG
     alt: "Ryan Goh ASME-PVDE: Flange Selection and Analysis Dialog"
     title: "Flange Module"
 ---

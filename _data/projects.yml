@@ -2,7 +2,7 @@ feature_row1:
   - image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Material_Dialog.JPG
     alt: "ASME-PVDE Mechanical Engineering Design Tool by Ryan Goh"
     title: "ASME-PVDE: Pressure Vessel Design Automation"
-    excerpt: "An automated engineering tool developed by **Ryan Goh** using Excel VBA. It streamlines pressure vessel design by integrating ASME Section VIII code calculations for rapid, high-accuracy analysis."
+    excerpt: "An automated engineering tool developed using Excel VBA. It streamlines pressure vessel design by integrating ASME Section VIII code calculations for rapid, high-accuracy analysis."
     url: "/blog/ASME-PVDE-feature-overview/"
     btn_label: "View Project Details"
     btn_class: "btn--primary"
@@ -13,7 +13,7 @@ feature_row2:
   - image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
     alt: "React Boilerplates and Web Development Kit by Ryan Goh"
     title: "React Boilerplates & UI Frameworks"
-    excerpt: "A collection of optimized React boilerplates designed by **Ryan Goh** to kickstart web development projects with a focus on performance, clean architecture, and modern UI/UX."
+    excerpt: "A collection of optimized React boilerplates designed to kickstart web development projects with a focus on performance, clean architecture, and modern UI/UX."
     url: "/blog/react-boilerplate-guide/"
     btn_label: "Explore Boilerplates"
     btn_class: "btn--primary"

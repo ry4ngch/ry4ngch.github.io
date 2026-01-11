@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About Ryan Goh"
+title: "About"
 excerpt: "The professional journey of Ryan Goh: A Mechanical Engineer and Web Developer bridging the gap between physical engineering and digital automation."
 last_modified_at: 2024-05-20
 ---
