@@ -3,8 +3,14 @@ title: "ASME-PVDE: Pressure Vessel Design Automation"
 excerpt: "An automated engineering software that I've developed using Excel VBA to streamline ASME Section VIII code compliance and design analysis."
 header:
   overlay_image: /assets/images/pressure_vessel_teaser.webp
+  overlay_color: "#000"
+  overlay_filter: "0.3"
   caption: "Automated Pressure Vessel Design Environment"
-  header_style: "color: #000; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.2);"
+  property:
+    title_classes:
+      - page__hero__text_bg_blur
+    lead_classes:
+       - page__hero__text_bg_blur
   teaser: /assets/images/pressure_vessel_teaser.webp
 sidebar:
   - title: "Developer"

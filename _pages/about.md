@@ -3,6 +3,9 @@ permalink: /about/
 title: "About"
 excerpt: "The professional journey of Ryan Goh: A Mechanical Engineer and Web Developer bridging the gap between physical engineering and digital automation."
 last_modified_at: 2024-05-20
+classes:
+    - font-size-16
+toc: true
 ---
 
 Hi! I'm **Ryan Goh**, a Mechanical Engineer based in Malaysia. My career is defined by a unique blend of traditional engineering discipline and modern software development expertise. 
@@ -11,10 +14,11 @@ I specialize in building tools that live at the intersection of **Mechanical Des
 
 ## The Bridge Between Two Worlds
 
-My journey began in the fast-paced **startup ecosystem as a Web Developer**, where I honed my skills in UI/UX design and API development. This foundation in software architecture allows me to approach mechanical engineering problems with a "digital-first" mindset. 
+My career sits at the intersection of **engineering discipline and software systems**. I began in the fast-paced **startup ecosystem as a Web Developer**, where I developed a strong foundation in UI/UX design, API development, and front-end architecture. This early exposure shaped how I think about systems—favoring clarity, scalability, and maintainability.
 
-Today, I apply that analytical thinking to solve real-world problems—whether it’s automating complex code calculations for pressure vessels or building scalable React frameworks.
+As I moved into mechanical engineering, I carried this software-first mindset with me. Working in traditional engineering roles, particularly in pressure equipment design, made it clear that many challenges were not purely technical, but **systemic**—manual workflows, fragmented tools, and knowledge locked inside spreadsheets or individuals. This naturally led me to focus on **engineering automation**, data-driven design, and tool development.
 
+Today, I am transitioning into **software engineering**, currently working on **HRMS (Human Resource Management System) platforms**. This move is a deliberate evolution rather than a career change. Building enterprise software allows me to apply core engineering principles—process optimization, data integrity, validation, and reliability—at an organizational scale. Whether designing mechanical systems or software platforms, my focus remains the same: **building robust systems that reduce friction, improve decision-making, and scale effectively over time**.
 
 
 ## Professional Focus & Core Competencies
@@ -23,15 +27,35 @@ Today, I apply that analytical thinking to solve real-world problems—whether i
 I leverage **Python (Pandas, NumPy)** and **R** to extract actionable insights from complex engineering datasets. My goal is to transform raw technical data into predictive models that drive better design decisions.
 
 ### 🤖 Applied Machine Learning
-I am passionate about applying ML techniques to the industrial sector, focusing on **Predictive Maintenance** and **Design Optimization** to improve the lifecycle of mechanical systems.
+I’m passionate about applying machine learning in practical industrial contexts, especially in:
+- Predictive maintenance
+- Design optimization
+- Performance trend analysis
+
+Rather than pure research, my interest lies in **deployable ML systems**—models that engineers can trust, interpret, and actually use in real-world environments.
 
 ### 🌐 Full-Stack Web Development
-With a background in startup development, I build responsive applications using **React, Webpack 5, and Node.js**. My current project, a [React Boilerplate Library](/portfolio/react-boilerplates/), focuses on creating optimized scaffolding for scalable front-end systems.
+With a background in startup development, I build responsive applications using 
+- **React**
+- **Webpack 5**
+- **Node.js**
+- **Vue**
+- **Laravel**
+
+ My current project, a [React Boilerplate Library](/portfolio/react-boilerplates/), focuses on creating optimized scaffolding for scalable front-end systems.
 
 ### 🛠️ Mechanical Design & Automation
-I possess deep domain knowledge in **ASME Section VIII Division 1** and **PED** compliance. My flagship project, the [ASME-PVDE](/portfolio/asme-pvde/), demonstrates my ability to build enterprise-grade automation tools using Excel VBA and Power Query.
+I possess deep domain expertise in **ASME BPVC Codes** and **PED** compliance, with a professional focus on the design and verification of pressure equipment. My experience spans both technical design and regulatory-facing work, including:
+- **ASME Section VIII Division 1**
+- **ASME Section VIII Division 2**
+- **PED compliance and conformity support**
+- Design documentation, calculations, and audit engagement
 
+Beyond traditional engineering practice, I bring a strong foundation in **software design and automation**, enabling me to translate complex code requirements and engineering logic into practical, repeatable tools for everyday engineering use. This approach bridges domain knowledge with system thinking, improving consistency, traceability, and efficiency across engineering workflows.
 
+My flagship project, the [ASME-PVDE](/portfolio/asme-pvde/), demonstrates my ability to build enterprise-grade automation tools using **Excel VBA and Power Query**.
+
+For me, automation is not about replacing engineers, but about elevating engineering work by removing unnecessary friction and enabling deeper technical thinking.
 
 ---
 

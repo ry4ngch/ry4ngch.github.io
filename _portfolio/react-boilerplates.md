@@ -5,6 +5,8 @@ header:
   overlay_image: /assets/images/blurred_digital_bookshelves.webp
   teaser: /assets/images/blurred_digital_bookshelves.webp
   caption: "Modern React Development Scaffolding"
+  overlay_color: "#000"
+  overlay_filter: "0.2"
 sidebar:
   - title: "Developer"
     text: "Ryan Goh"
