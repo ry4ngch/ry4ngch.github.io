@@ -7,11 +7,11 @@ categories:
 tags:
   - ASME BPVC
   - VBA Programming
-excerpt: "The story behind the development of the ASME PVDE. An Excel VBA software for pressure vessel design."
+excerpt: "The story behind the development of ASME PVDE, a one-of-a-kind Excel VBA software for pressure vessel design and engineering education."
 toc: true
 toc_sticky: true
 seo_title: "ASME PVDE - The Open Source ASME Pressure Vessel Design Software Development Journey – Excel VBA Automation"
-seo_description: "Learn the story of ASME PVDE development in Excel VBA. Discover challenges, solutions, and evolution of this automated pressure vessel design tool with built-in material databases and user-friendly interface."
+seo_description: "Discover the development journey of ASME PVDE in Excel VBA. Learn how this open-source tool bridges engineering knowledge and software automation, with built-in material databases and user-friendly interface."
 image: "https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/splashscreen.JPG"
 ---
 
@@ -19,36 +19,65 @@ Curious about the **features of ASME PVDE**? Check out [ASME-PVDE: Intro & Featu
 
 [Feature-Overview]: {% post_url 2025-08-31-ASME-PVDE-feature-overview %}
 
-In **February 2021**, I joined a smaller company after leaving a large corporation. I noticed that many SMEs in Malaysia either avoided commercial engineering software due to cost or relied heavily on **manual calculations**, often leading to inefficiencies and potential errors.  
+---
 
-Motivated to **bridge the gap between engineering and modern digital tools**, I started developing a **user-friendly, automated engineering program** to help both beginners and experienced engineers. Leveraging my **web development background**, I explored ways to integrate Excel with a **custom interface** and a **built-in database**, enabling fast and accurate pressure vessel calculations.  
+In **February 2021**, I found myself in a period of transition. I had just resigned from a new job and was temporarily unemployed. Rather than seeing this as a setback, I saw it as an opportunity to explore an idea that had been on my mind for some time: developing a tool that could bridge the gap between **complex engineering codes** and practical, usable software for engineers.  
+
+Many SMEs in Malaysia were still relying on **manual calculations**, and commercial engineering software was often too costly. Errors could easily slip in, and following ASME codes felt unnecessarily burdensome. I realized that my combined background in **mechanical engineering and programming** could be used to solve this problem. I decided to embark on a project that would eventually become **ASME PVDE**, a modular, interactive, and educational engineering tool built entirely in Excel and VBA.
 
 ---
 
-## Early Challenges
-- Learning **VBA syntax** and translating engineering logic into code.  
-- Building a basic interface to display **ASME BPVC Section II Part D material data**, which required **hours of manual extraction**.  
-- Maintaining the **material database** as ASME publishes new code books every three years. Solved by splitting data into **individual Excel files per year** and using **Power Query** to compile them automatically.  
-- **Reusing the material interface across worksheets** without conflicts. Solved using **Excel named ranges scoped to individual worksheets**.  
+### The Early Struggle
 
-> These challenges taught me the importance of **scalable design**, **data management**, and **user-focused interface development**.
+The first months were humbling, full of trial and error. Every challenge forced me to think creatively about both engineering logic and software design. Some of the key struggles included:  
 
----
+- **Translating ASME BPVC Section VIII calculations into VBA logic** while keeping performance high and results accurate.  
+- **Building an intuitive interface** to display Section II Part D material data, which involved **hours of careful manual extraction and validation**.  
+- **Keeping the material and component databases up to date** as ASME publishes new codes every three years. Solved by **splitting data into yearly Excel files** and consolidating them with **Power Query**.  
+- **Ensuring modularity and reusability across worksheets**, achieved through **named ranges scoped per worksheet**, allowing the tool to scale without breaking functionality.  
 
-## How the Program Evolved
-Over four years, the project has grown far beyond a simple material database:  
-- **Expanded databases**: flanges, piping, gaskets, and other components.  
-- **Multiple worksheets**: covering code-governed and non-code components.  
-- **Options for multiple use cases**: adaptable to various engineering scenarios.  
-- **User-friendly improvements**: enabling quick navigation and checks, even for engineers with limited coding experience.  
-
-Some people ask why I didn’t build it in Python. The reasons:  
-- Many engineers aren’t familiar with coding, and running a Python app wouldn’t be straightforward.  
-- Python UI libraries are either limited or require **commercial licenses**.  
-- **Excel VBA** is already integrated with a tool engineers use daily, making it the most practical choice.  
+> These challenges highlighted the importance of **scalable design**, **data management**, and **user-focused software development**, even within the limitations of Excel and VBA. Each obstacle reinforced that building a useful tool required **thoughtful architecture, not just coding**.  
 
 ---
 
-After four years of development, this project has become the robust tool you see today. Along the way, I learned a lot about balancing **user needs**, **data management**, and **software design** in a real-world engineering context.  
+### Growth and Evolution
 
-Explore the [GitHub repository](https://github.com/ry4ngch/ASME-PVDE) and check the [changelog](https://github.com/ry4ngch/ASME-PVDE/blob/master/changelog.md) to see how it has evolved over the years. If you find the program useful, please consider leaving a ⭐.  
+Over four years, ASME PVDE gradually transformed into something far more comprehensive than I initially imagined:  
+
+- **Expanded databases** covering flanges, piping, gaskets, and other critical components.  
+- **Multiple worksheets** to handle code-governed and non-code components.  
+- **Flexible features** to accommodate a variety of engineering scenarios.  
+- **Real-time feedback**, referencing relevant code paragraphs from the built-in codebook, so users understand not just the results, but the reasoning behind them.  
+
+A key architectural decision was **leveraging the strengths of Excel and VBA**:  
+
+- **Excel handles all calculations**, avoiding slowdowns from VBA when processing large datasets.  
+- **VBA manages the interface, database filtering logic, and real-time feedback**, keeping the tool modular, responsive, and informative.  
+
+Even though some parts of the 2025 edition of ASME codes have changed — for example, **Appendix 2 moved from Division 1 to Division 2** — many modules remain relevant, making the tool an excellent reference and teaching aid for engineers learning pressure vessel design.  
+
+Some may ask why I didn’t build this in Python or another modern programming language:  
+
+- Many engineers aren’t familiar with coding, and deploying Python apps can be nontrivial.  
+- Python UI libraries are limited or require **commercial licenses**.  
+- **Excel VBA** is already a familiar tool for engineers, making it the most practical and accessible choice.  
+
+---
+
+### Open-Source Impact
+
+From the beginning, I wanted ASME PVDE to be more than just a personal project or a company utility. Released under a **GPL3 license**, it is freely available for engineers worldwide.  
+
+The tool now serves as:  
+
+- A **practical design aid**, helping engineers perform accurate calculations efficiently.  
+- An **educational platform**, showing how to implement calculations, structure modular software, and reference code paragraphs.  
+- Proof that **sophisticated engineering software can be built entirely in Excel and VBA**, even with thousands of material entries and complex rules, without external plugins or libraries.  
+
+---
+
+Looking back, developing ASME PVDE was as much about **architecture and problem-solving** as it was about programming. It was about **finding balance between tool limitations, user needs, and educational value**, and proving that **creativity and hybrid skillsets can overcome constraints**.  
+
+Four years on, ASME PVDE has become more than a calculation tool — it is a **bridge between engineering knowledge and software design**, a **learning platform**, and an example of what can be achieved when engineers think beyond traditional tools.  
+
+Explore the [GitHub repository](https://github.com/ry4ngch/ASME-PVDE) and the [changelog](https://github.com/ry4ngch/ASME-PVDE/blob/master/changelog.md) to see how the tool has evolved. If it helps you in any way, a ⭐ is always appreciated.
