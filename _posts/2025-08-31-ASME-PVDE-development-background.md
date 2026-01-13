@@ -80,4 +80,6 @@ Looking back, developing ASME PVDE was as much about **architecture and problem-
 
 Four years on, ASME PVDE has become more than a calculation tool — it is a **bridge between engineering knowledge and software design**, a **learning platform**, and an example of what can be achieved when engineers think beyond traditional tools.  
 
+Curious about why I eventually moved industries, and how the industrial landscape is evolving? Read more in my post: [My Journey from Engineering Niche to Systems Thinking]({% post_url 2026-01-13-my-new-journey %})
+
 Explore the [GitHub repository](https://github.com/ry4ngch/ASME-PVDE) and the [changelog](https://github.com/ry4ngch/ASME-PVDE/blob/master/changelog.md) to see how the tool has evolved. If it helps you in any way, a ⭐ is always appreciated.

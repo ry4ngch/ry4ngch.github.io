@@ -96,7 +96,7 @@ The resume consists of multiple components, each implemented as a separate Liqui
 - **`nav.liquid`** – Generates a dynamic navigation menu
 - **`pill-tag.liquid`** – Used to display skills or tags as styled pill elements.
 - **`progress-bar.liquid`** – Animates circular progress bars for skill levels or certifications (optional and not fully integrated).
-- **`timeline.liquid`** – Renders experience and education history in a vertical timeline format.
+- **`timeline.liquid`** – Renders experience and education history in a horizontal timeline format.
 
 ---
 
