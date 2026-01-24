@@ -210,6 +210,19 @@
     -webkit-filter: grayscale(100%); 
 }
 
+.icon-element-plus {
+    background: url('../icons/element-plus.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+}
+
 /* For front page animation */
 .typewriter:after {
     content: ' ';

@@ -460,4 +460,10 @@ progress {
   .resume-contents {
     flex-direction: column;
   }
+
+  .pill-tag {
+    display: inline-block;
+    border: 1px solid;
+    border-color: inherit;
+  } 
 }

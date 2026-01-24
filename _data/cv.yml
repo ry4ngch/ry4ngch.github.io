@@ -67,6 +67,12 @@
           icon: 'icon-mongodb'
         - name: NodeJS
           icon: 'icon-nodejs'
+        - name: VueJS
+          icon: 'fa-brands fa-vuejs'
+        - name: Laravel
+          icon: 'fa-brands fa-laravel'
+        - name: Element UI
+          icon: 'icon-element-plus'
     - title: Static Design
       description: 
         - name: PVElite

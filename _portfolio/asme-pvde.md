@@ -10,7 +10,7 @@ header:
     title_classes:
       - page__hero__text_bg_blur
     lead_classes:
-       - page__hero__text_bg_blur
+      - page__hero__text_bg_blur
   teaser: /assets/images/pressure_vessel_teaser.webp
 sidebar:
   - title: "Developer"
