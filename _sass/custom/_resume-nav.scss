@@ -6,7 +6,8 @@
   
   // Header styling
   .nav__title {
-    background: #383A45;
+    --nav-background: #{$primary-color};
+    background: var(--nav-background, #383A45);
     color: #ddd;
     text-align: center;
     font-size: 17px;

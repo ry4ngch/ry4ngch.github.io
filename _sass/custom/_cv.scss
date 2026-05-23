@@ -81,10 +81,11 @@
   --dot-offset: 0.6em; /* distance from top of item to dot center */
   --line-width: 1.5px;
   --timeline-dot: #fff;
-  --timeline-dot-border: #000;
+  --timeline-dot-border: #{$primary-color};
   --timeline-dot-border-width: 1.5px;
-  --timeline-line: #000;
+  --timeline-line: #{$primary-color};
   --timeline-offset-left: -32px;
+  --timeline-year-border: #{$primary-color};
 }
 
 .timeline-item {
@@ -130,7 +131,8 @@
 
 .timeline-year {
   padding: 10px;
-  border: 2px solid #081921;
+  margin-bottom: 10px;
+  border: 2px solid var(--timeline-year-border,#081921);
   border-radius: 20px;
   display: block;
   width: fit-content;
@@ -272,11 +274,12 @@
   }
 
   .mastery div{
+    --chart-bar-color: #{$chart-color};
     position:absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: var(--chart-bar-color, #03a9f4);
     border-radius: 3px;
   }
 
@@ -389,11 +392,12 @@ progress {
   padding: 0px 15px 0px 30px;
   position: relative;
   margin-bottom: 15px;
+  --list-item-dot-border: #{$primary-color};
   &:before {
     content: "";
     position: absolute;
     background: #fff;
-    border: 1.5px solid #000;
+    border: 1.5px solid var(--list-item-dot-border, #000);
     width: 8px;
     height: 8px;
     border-radius: 50%;

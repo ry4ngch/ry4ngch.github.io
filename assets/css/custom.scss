@@ -1,3 +1,9 @@
+---
+
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
 .page__hero {
     position: relative;
     overflow: hidden;
@@ -87,7 +93,8 @@
 }
 
 .page__meta-readtime {
-    border: 2px solid #343434;
+    --readtime-color: #{$primary-color};
+    border: 2px solid var(--readtime-color,#343434);
     padding: 0.8em;
     border-radius: 1.6rem;
     /* color: #2d3748; */
@@ -111,7 +118,7 @@
 }
 
 .icon-ionic {
-    background: url('../icons/ionic.svg');
+    // background: url('../icons/ionic.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -119,10 +126,15 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
+    -webkit-mask: url(../icons/ionic.svg) no-repeat center;
+    mask: url(../icons/ionic.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color; 
 }
 
 .icon-autodesk {
-    background: url('../icons/autodesk.svg');
+    // background: url('../icons/autodesk.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -130,23 +142,34 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
+    -webkit-mask: url(../icons/autodesk.svg) no-repeat center;
+    mask: url(../icons/autodesk.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
+    
 }
 
 .icon-codeware {
-    background: url('../icons/codeware.svg');
+    // background: url('../icons/codeware.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
     height: 30px;
     width: 30px;
     vertical-align: middle;
-    -webkit-filter: invert(.75);
-    filter: invert(.75);
+    // -webkit-filter: invert(.75);
+    // filter: invert(.75);
     background-position: center;
+    -webkit-mask: url(../icons/codeware.svg) no-repeat center;
+    mask: url(../icons/codeware.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-ansys {
-    background: url('../icons/ansys.svg');
+    // background: url('../icons/ansys.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -154,10 +177,15 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
+    -webkit-mask: url(../icons/ansys.svg) no-repeat center;
+    mask: url(../icons/ansys.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-solidworks {
-    background: url('../icons/solidworks.svg');
+    // background: url('../icons/solidworks.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -165,10 +193,15 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
+    -webkit-mask: url(../icons/solidworks.svg) no-repeat center;
+    mask: url(../icons/solidworks.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-prg {
-    background: url('../icons/prgfull.svg');
+    // background: url('../icons/prgfull.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -176,12 +209,17 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
-    -webkit-filter: invert(.75);
-    filter: invert(.75);
+    // -webkit-filter: invert(.75);
+    // filter: invert(.75);
+    -webkit-mask: url(../icons/prgfull.svg) no-repeat center;
+    mask: url(../icons/prgfull.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-hexagon {
-    background: url('../icons/hexagon.svg');
+    // background: url('../icons/hexagon.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -189,10 +227,15 @@
     width: 30px;
     vertical-align: middle;
     background-position: center;
+    -webkit-mask: url(../icons/hexagon.svg) no-repeat center;
+    mask: url(../icons/hexagon.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-inventor {
-    background: url('../icons/inventor.svg');
+    // background: url('../icons/inventor.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -200,8 +243,13 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
+    // filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%); 
+    -webkit-mask: url(../icons/inventor.svg) no-repeat center;
+    mask: url(../icons/inventor.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color;
 }
 
 .icon-prepomax {
@@ -218,7 +266,7 @@
 }
 
 .icon-element-plus {
-    background: url('../icons/element-plus.svg');
+    /* background: url('../icons/element-plus.svg'); */
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -226,8 +274,13 @@
     width: 18px;
     vertical-align: middle;
     background-position: center;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
+    /* filter: grayscale(100%); */
+    /* -webkit-filter: grayscale(100%);  */
+    -webkit-mask: url(../icons/element-plus.svg) no-repeat center;
+    mask: url(../icons/element-plus.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: $text-color; 
 }
 
 /* For front page animation */
