@@ -6,9 +6,9 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
-{% for f in feature_row %}
-  <div class="feature__wrapper{% if f.classes %}{{ f.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+<div class="feature__wrapper">
+  {% for f in feature_row %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}{% if f.classes %}{{ f.classes | join: ' ' | prepend: ' ' }}{% endif %}">
       <div class="archive__item">
         {% if f.image_path %}
           <div class="archive__item-teaser">
@@ -27,8 +27,8 @@
           {% endif %}
 
           {% if f.excerpt %}
-            <div class="archive__item-excerpt">
-              {{ f.excerpt | markdownify }}
+            <div class="archive__item-excerpt{% if f.excerpt.classes %}{{ f.excerpt.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+              {{ f.excerpt.text | markdownify }}
             </div>
           {% endif %}
 
@@ -36,8 +36,8 @@
             <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
+
       </div>
     </div>
   {% endfor %}
-
 </div>

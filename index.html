@@ -26,30 +26,62 @@ header:
       url: "https://www.linkedin.com/in/ryangch/"
 
 intro:
-  - title: 'About Me'
-    excerpt: "Hi! I'm **Ryan Goh**, a mechanical engineer based in Malaysia with a passion for data analytics, machine learning, and web development. With a background in both startup web development and traditional engineering, I build digital tools like the **ASME-PVDE** to solve real-world engineering challenges."
+  - excerpt: 
+      text: |
+        Hi! I’m **Ryan Goh**, a Malaysia-based **Software Engineer** and **Full-Stack Developer** with a deep, 7-year background in mechanical engineering. Today, I leverage that rigorous analytical foundation to build scalable digital solutions in the tech industry, specializing in **HRMS (Human Resource Management System)** software development.<br/>
+      
+        My unique transition from traditional engineering to IT is driven by a passion for **data analytics, machine learning, and web development**. I excel at transforming complex business logic into clean, efficient code. Early on, I proved this by building the **ASME-PVDE** and advanced data-wrangling tools to automate intricate engineering workflows.<br/>
+      
+        Now, I apply that same precision to **software architecture** and **application development**. By bridging the gap between data-driven backend systems and user-centric frontend design, I create robust HR tech solutions that solve modern organizational challenges. <br/>
+
+        Whether you're looking for a detail-oriented **Web Developer**, an agile **Software Engineer**, or an innovative tech collaborator in Malaysia, let’s connect and build something impactful!
+      classes:
+        - align-left
+
+services:
+  - image_path: "https://placehold.co/600x400/222222/ffffff?text=HRMS"
+    alt: "HRMS & Web App Development"
+    title: "⚡ HRMS & Web Development"
+    excerpt: "Custom **Human Resource Management Systems (HRMS)** and full-stack web applications built for scalability, security, and seamless user experiences."
+    
+  - image_path: "https://placehold.co/600x400/222222/ffffff?text=Data"
+    alt: "Data Analytics & ML"
+    title: "📊 Data Analytics & AI/ML"
+    excerpt: "Transforming complex datasets into actionable business intelligence. Specialized in predictive modeling, data wrangling, and machine learning pipelines."
+    
+  - image_path: "https://placehold.co/600x400/222222/ffffff?text=Engineering"
+    alt: "Industrial Automation"
+    title: "⚙️ Industrial Software & R&D"
+    excerpt: "Bridging the gap between software and mechanical engineering. Building custom calculation tools, ASME-compliant automation, and VBA/Power Query scripts."
 
 ---
 
-{% include feature_row id="intro" type="center" %}
+<div class="about-section">
+  <h2 class="section-title">About Me</h2>
+  {% include feature_row id="intro" type="center" %}
+</div>
 
-<h2 style="text-decoration:underline; margin-left: 20px;">
-  Personal Projects & Engineering Tools
-</h2>
+<hr class="section-divider" />
 
-<br/>
+<div class="services-section">
+  <h2 class="section-title">Core Competencies & Services</h2>
+  {% include feature_row id="services" %}
+</div>
 
-{% assign projects_data = site.data.projects | to_a %}
+<hr class="section-divider" />
 
-{% for project_row in projects_data %}
-  {% assign row_data = project_row[1] %}
-
-  {% assign remainder = forloop.index | modulo: 2 %}
-  {% if remainder == 0 %}
-    {% assign type = 'right' %}
-  {% else %}
-    {% assign type = "left" %}
-  {% endif %}
-
-  {% include feature_row data_row=row_data type=type %}
+<div class="projects-section">
+  <h2 class="section-title">Personal Projects & Engineering Tools</h2>
+  
+  {% assign projects_data = site.data.projects | to_a %}
+  {% for project_row in projects_data %}
+    {% assign row_data = project_row[1] %}
+    {% assign remainder = forloop.index | modulo: 2 %}
+    {% if remainder == 0 %}
+      {% assign type = 'right' %}
+    {% else %}
+      {% assign type = 'left' %}
+    {% endif %}
+    {% include feature_row data_row=row_data type=type %}
   {% endfor %}
+</div>

@@ -55,7 +55,7 @@
 }
 
 .anchor-title {
-  color: #222;
+  color: inherit;
   letter-spacing: -0.5px;
   margin: inherit;
   padding: 10px 0;
@@ -159,7 +159,7 @@
     padding: 0 10px;
 
     &:hover{
-    background: linear-gradient(130deg, rgba(251, 251, 254, 0.6), rgba(251, 251, 254, 0.2));
+    // background: linear-gradient(130deg, rgba(251, 251, 254, 0.6), rgba(251, 251, 254, 0.2));
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     border-radius: 10px;
     transition: box-shadow 0.25s;
@@ -345,12 +345,13 @@ progress {
 	border-radius: 1em;
 	border: none;
 	outline: none;
-	background: #f3f3f3;;
+	background: transparent;
 	cursor: pointer;
 }
 
 .pill-tag:hover {
-	background: #cccccc;
+  background-color: rgba($gray, 0.1);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0);
 }
 
 .pill-title {
