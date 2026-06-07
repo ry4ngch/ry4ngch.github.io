@@ -161,3 +161,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-KBN5DQ3783" 
+    anonymize_ip: true
