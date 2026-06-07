@@ -18,6 +18,7 @@ masthead_title: "Ryan Goh"
 name: "Ryan Goh"
 email: ry4n.gch@gmail.com
 url: "https://ry4ngch.github.io"
+baseurl: ""
 lang: "en"
 google_site_verification: cRgI9hxvdXujIYgFREHTLm_NC8fUMlzbWf0jdze0isI
 description: >- 
@@ -39,8 +40,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
-# remote_theme: mmistakes/minimal-mistakes@4.28.0
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes@4.28.0
+# theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 #paginate: 5 # amount of posts to show
@@ -81,6 +82,7 @@ include:
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
