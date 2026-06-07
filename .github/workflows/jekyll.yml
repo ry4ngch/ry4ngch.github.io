@@ -25,6 +25,7 @@ jobs:
       - name: Build Jekyll site
         env:
           JEKYLL_ENV: production 
+          PAGES_REPO_NWO: ${{ github.repository }}
         run: bundle exec jekyll build
 
       - name: Upload site artifact
