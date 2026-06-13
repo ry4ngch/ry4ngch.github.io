@@ -165,7 +165,7 @@ collections:
     permalink: /:collection/:path/
 
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-KBN5DQ3783" 
     anonymize_ip: true
