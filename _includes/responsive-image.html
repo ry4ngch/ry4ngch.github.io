@@ -1,0 +1,6 @@
+<picture>
+    {% for resize in resized %}
+    <source media="(max-width: {{ resize.width }}px)" srcset="{{ resize.url | relative_url }}">
+    {% endfor %}
+    <img src="{{ original.url | relative_url }}" alt="{{ alt }}">
+</picture>

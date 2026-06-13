@@ -85,9 +85,28 @@ After either of the above 2 methods is used, we can now navigate to the actual l
 - _pages/ – Static pages like About, Projects, etc.
 - _config.yml – Site configuration file
 - assets/ – Images, CSS, and JS files
-- _layout/ - Layout templates from Minimal Mistakes (not currently used, reserved for future customization)
-- _portfolio/ - Portfolio pages (not currently used)
+- _layout/ - Layout templates from Minimal Mistakes
+- _portfolio/ - Portfolio pages
 - _sass/ - Theme styling files (not required for remote theme usage, for advanced customization only)
+
+## Useful command for posting new content
+> [!NOTE]
+> The following command can be used when `jekyll-compose` plugin is installed 
+> As github pages depends on `jekyll-sass-converter = 1.5.2`, we need to append `bundle exec` to the below command to use since GemFile depends on `jekyll-sass-converter = 3.1.0`
+
+```bash
+# Create a post: 
+bundle exec jekyll post "My New Post"
+
+# Create a draft: 
+bundle exec jekyll draft "My Draft"
+
+# Publish a draft: 
+bundle exec jekyll publish _drafts/my-draft.md
+
+# Unpublish a post: 
+bundle exec jekyll unpublish _posts/my-post.md
+```
 
 ## License
 

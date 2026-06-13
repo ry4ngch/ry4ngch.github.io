@@ -90,6 +90,9 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-compose
+  - jekyll-responsive-image
+  - jekyll-redirect-from
 
 author:
   name   : "Ryan Goh"
@@ -169,3 +172,14 @@ analytics:
   google:
     tracking_id: "G-KBN5DQ3783" 
     anonymize_ip: true
+
+# For use with jekyll-responsive-image plugin
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 480
+    - width: 800
+    - width: 1200
+  # Specify where your raw images live and where resized ones should go
+  assets_images_path: assets/images
+  output_path_format: assets/resized/%n-%w.%e

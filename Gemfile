@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "minimal-mistakes-jekyll"
+gem 'observer'
 
 gem "github-pages", group: :jekyll_plugins
 
@@ -17,5 +18,8 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-sass-converter", "1.5.2"
   gem "jekyll-seo-tag"
+  gem 'jekyll-compose'
+  gem 'jekyll-responsive-image'
+  gem "jekyll-redirect-from"
   # gem "jekyll-algolia" # Uncomment if switching to Algolia-powered search
 end
