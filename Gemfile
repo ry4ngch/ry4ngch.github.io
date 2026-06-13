@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
 gem "minimal-mistakes-jekyll"
-gem 'observer'
-
+gem 'observer', '>= 0.1.0' if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('3.4.0')
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
