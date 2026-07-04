@@ -48,6 +48,10 @@ With a background in startup development, I build responsive applications using
 I possess deep domain expertise in **ASME BPVC Codes** and **PED** compliance, with a professional focus on the design and verification of pressure equipment. My experience spans both technical design and regulatory-facing work, including:
 - **ASME Section VIII Division 1**
 - **ASME Section VIII Division 2**
+- **PD5500**
+- **TEMA**
+- **API650, API660**
+- **ASME B31.3**
 - **PED compliance and conformity support**
 - Design documentation, calculations, and audit engagement
 
