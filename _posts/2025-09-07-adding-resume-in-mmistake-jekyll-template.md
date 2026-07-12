@@ -116,7 +116,17 @@ These partials must be imported into the main stylesheet (`minimal-mistakes.scss
 
 ---
 
-### Step 5: Setting up the table of content (toc) sidebar:
+### Step 5: Setup mmistake skins with the appropriate scss variable
+
+For the resume to work seamlessly with each of the minimal-mistake skins, make sure each of the skins scss files are updated with the `$chart-color` constants, these are used by the resume to generate the appropriate color scheme for each themes.
+
+Inside `_sass` directory, open `minimal-mistakes` folder, then navigate to `skins` folder, then update each of the skins and add the line below:
+
+```scss
+$chart-color: $primary-color !default;
+```
+
+### Step 6: Setting up the table of content (toc) sidebar:
 To enable the TOC sidebar, include the following in the front matter of your `cv.md` file:
 
 ```text
@@ -131,7 +141,7 @@ toc_sticky: true
 
 ---
 
-### Step 6 (Optional): Add `font-mfizz` Icons
+### Step 7 (Optional): Add `font-mfizz` Icons
 If you want to enhance your resume with additional technology or brand icons not available in Font Awesome, you can include the font-mfizz package:
 
 1. Copy the `font-mfizz` folder into your `assets/css` directory.

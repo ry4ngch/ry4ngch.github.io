@@ -206,7 +206,7 @@
   type: timeline
   icon: 'fa-table-list'
   contents:
-    - title: <a href="https://github.com/ry4ngch/ASME-PVDE">Pressure Vessel Design and Estimation Program (ASME-PVDE)</a>
+    - title: <a href="https://github.com/ry4ngch/ASME-PVDE">Pressure Vessel Design Environment (ASME-PVDE)</a>
       year: Feb 2021 - Aug 2025
       description: Developed a VBA Excel based pressure vessel engineering software to automated design of pressure equipments with in-built database for flange, piping, gasket and materials.
     - title: <a href="">Job Seeker Platform</a>
