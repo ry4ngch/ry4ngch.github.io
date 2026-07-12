@@ -4,6 +4,32 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  <!-- KaTeX JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <!-- KaTeX Auto-render Extension -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          // 1. Define the delimiters
+          delimiters: [
+              {left: '$$', right: '$$', display: true}, // Block math
+              {left: '\\[', right: '\\]', display: true}, // Alternative block math
+              {left: '$', right: '$', display: false},  // Inline math
+              {left: '\\(', right: '\\)', display: false} // Alternative inline math
+          ],
+          
+          // 2. Protect your code blocks!
+          ignoredTags: [
+              "script", "noscript", "style", "textarea", "pre", "code", "option"
+          ],
+          
+          // 3. Prevent page breaks on bad syntax
+          throwOnError: false,
+          errorColor: "#cc0000"
+      });
+  });
+  </script>
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}

@@ -20,5 +20,6 @@ group :jekyll_plugins do
   gem 'jekyll-compose'
   gem 'jekyll-responsive-image'
   gem "jekyll-redirect-from"
+  gem 'jekyll-gfm-admonitions'
   # gem "jekyll-algolia" # Uncomment if switching to Algolia-powered search
 end

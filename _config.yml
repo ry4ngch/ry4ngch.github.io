@@ -38,6 +38,7 @@ date_format: "%Y-%m-%d"
 # Build settings
 markdown: kramdown
 kramdown:
+  math_engine: mathjax
   input: GFM
   auto_ids: true
 remote_theme: mmistakes/minimal-mistakes@4.28.0
@@ -93,6 +94,7 @@ plugins:
   - jekyll-compose
   - jekyll-responsive-image
   - jekyll-redirect-from
+  - jekyll-gfm-admonitions
 
 author:
   name   : "Ryan Goh"
