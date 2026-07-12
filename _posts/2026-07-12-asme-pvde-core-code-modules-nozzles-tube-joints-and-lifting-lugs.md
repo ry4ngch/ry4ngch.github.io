@@ -44,7 +44,7 @@ Rather than forcing you to input every variable manually, ASME-PVDE streamlines 
 
 ### Reinforcement & Weld Design Logic
 *   **Projection Tracking:** The software accurately tracks nozzle projection lengths (both internal and external) to feed directly into external pressure calculations. If you use the "Flange Data" feature, ASME-PVDE will automatically subtract the flange thickness to determine the true projection length of the pipe.
-*   **Self-Reinforcing Nozzles:** For components like Ladle Weld Necks (LWN) or Hub Nozzles that do not utilize reinforcement pads, simply toggle the self-reinforcing option and specify your bevel height.
+*   **Self-Reinforcing Nozzles:** For components like Long Weld Necks (LWN) or Hub Nozzles that do not utilize reinforcement pads, simply toggle the self-reinforcing option and specify your bevel height.
 *   **Weld Designation:** The user interface features interactive graphics that update based on your selected weld type (abutting vs. set-in/insert). This isn't just visual; the program uses your selection to determine the exact calculation area and required weld sizing.
 
 ## 2. Tube-to-Tubesheet Joints
