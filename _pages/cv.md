@@ -9,6 +9,7 @@ toc:
   title: '<i class="fa-solid fa-file"></i> Resume'
   show_profile: true
 toc_sticky: true
-
+seo_title: "Ryan Goh Chuang Hong | Resume & Porfolio"
+seo_description:  "View Ryan’s professional resume and portfolio. Explore my skills, career experience, and past projects. Let’s collaborate and build something great."
 # classes: wide
 ---

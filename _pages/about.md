@@ -6,6 +6,8 @@ last_modified_at: 2024-05-20
 classes:
     - font-size-16
 toc: true
+seo_title: "The professional journey of Ryan Goh: From Mechanical Engineering to System Architect"
+seo_description: "Explore the professional journey of Ryan Goh and his development from a Mechanical Engineer to a System Architecture, bridging the gap between traditional engineering and digital automation"
 ---
 
 Hi! I'm **Ryan Goh**, a Mechanical Engineer based in Malaysia. My career is defined by a unique blend of traditional engineering discipline and modern software development expertise. 

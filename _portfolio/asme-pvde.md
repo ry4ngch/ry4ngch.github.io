@@ -47,6 +47,9 @@ gallery:
     image_path: https://raw.githubusercontent.com/ry4ngch/ASME-PVDE/master/Screenshots/Flange_Dialog.JPG
     alt: "Ryan Goh ASME-PVDE: Flange Selection and Analysis Dialog"
     title: "Flange Module"
+
+seo_title: "ASME-PVDE Excel VBA Tool – Pressure Vessel Design Environment Open Source Software"
+seo_description: "Explore the features and capabilities offered by the open-source ASME-PVDE tool. A niche and unique tool custom build for pressure vessel design."
 ---
 
 The **ASME PVDE (Pressure Vessel Design Environment)** is a specialized engineering automation tool developed by **Ryan Goh**. The design was inspired by industry-standard tools like **PVElite** and architected using the component-based workflows of **CodeCalc**.

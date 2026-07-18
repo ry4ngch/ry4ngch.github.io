@@ -53,7 +53,7 @@ For heat exchanger design, the interface between the tubes and the tubesheet is 
 
 ASME-PVDE automates the **weld strength logic** for these critical joints. By taking your tube dimensions, tubesheet parameters, and weld sizes, the module verifies that the joint provides sufficient holding power to prevent tube pull-out or fatigue failure during operation.
 
-**Design Considerations Managed by PVDE:**
+**Design Considerations Managed by ASME-PVDE:**
 *   **U-Tubes:** Typically affected only by pressure, not thermal loads.
 *   **Fixed Tubes:** Evaluates both pressure and thermal effects to determine the loads the weld must resist.
 *   **Electric Heaters:** Since the "tube side" connects to terminal/junction boxes rather than handling process fluids, ASME-PVDE allows you to zero out the tube-side design parameters.
@@ -70,9 +70,9 @@ There is no single "best" way to design a lifting lug; it depends on the load ap
 *   **AISC & EN 13445-3:** Also incorporated for specific welding practices and structural checks.
 
 ### Configuring Perpendicular Lugs
-When designing standard tailing lugs or top head lifting points, PVDE allows granular control over the structural parameters:
+When designing standard tailing lugs or top head lifting points, ASME-PVDE allows granular control over the structural parameters:
 *   **Material Properties:** Tensile strength defaults to a 38°C baseline (ambient temperature), but you can utilize the user-defined material registry for custom temperatures.
-*   **Stiffener Logic:** Stiffeners must be defined in pairs. PVDE automatically calculates the second moment of area and accounts for the stiffener-to-pin-hole spacing to determine the load eccentricity.
+*   **Stiffener Logic:** Stiffeners must be defined in pairs. ASME-PVDE automatically calculates the second moment of area and accounts for the stiffener-to-pin-hole spacing to determine the load eccentricity.
 *   **Safety & Experience Factors:** The module allows you to apply precise safety margins, including a general Impact Factor (typically 1.5 to 2.0 for dynamic response), ASME BTH-1 Operator Experience factors, and Load Cycle factors to guard against fatigue.
 *   **AISC Occasional Factor:** If your lifting lug is subjected to wind or other occasional loads, this factor can be used to appropriately increase the allowable stress. 
 
@@ -103,6 +103,6 @@ When designing standard tailing lugs or top head lifting points, PVDE allows gra
 
 ### Wrapping Up
 
-That concludes our overview of the PVDE open-source tool! By combining rigid mechanical engineering principles with structured software architecture, ASME-PVDE eliminates repetitive manual calculations, dynamically flags code violations, and ultimately streamlines the pressure vessel design process.
+That concludes our overview of the ASME-PVDE open-source tool! By combining rigid mechanical engineering principles with structured software architecture, ASME-PVDE eliminates repetitive manual calculations, dynamically flags code violations, and ultimately streamlines the pressure vessel design process.
 
 Feel free to explore the GitHub repository, pull the latest version, and start optimizing your design workflow today.

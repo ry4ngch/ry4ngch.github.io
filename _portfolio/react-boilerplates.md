@@ -28,6 +28,9 @@ gallery:
     image_path: https://raw.githubusercontent.com/ry4ngch/React-Boilerplates/main/Salient_Navbar_Demo.gif
     alt: "Reusable React Navbar Components Preview"
     title: "Reusable Navbar Components"
+
+seo_title: "React Scaffolding Project: Build to Simplify Web Development Workflow"
+seo_description: "Explore the modern react boilerplates purposely build to speed up web development workflow with reusable component architecture."
 ---
 
 The **React Boilerplate** project is a personal initiative by **Ryan Goh** to build a robust, production-ready starting point for modern web applications. Moving away from standard CLI tools, this boilerplate offers deep control over the build process using **Webpack 5**.
