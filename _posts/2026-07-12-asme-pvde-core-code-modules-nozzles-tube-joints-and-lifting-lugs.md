@@ -76,6 +76,13 @@ When designing standard tailing lugs or top head lifting points, ASME-PVDE allow
 *   **Safety & Experience Factors:** The module allows you to apply precise safety margins, including a general Impact Factor (typically 1.5 to 2.0 for dynamic response), ASME BTH-1 Operator Experience factors, and Load Cycle factors to guard against fatigue.
 *   **AISC Occasional Factor:** If your lifting lug is subjected to wind or other occasional loads, this factor can be used to appropriately increase the allowable stress. 
 
+> [!NOTE]
+> The lifting lug design module is intended to facilitate lifting lug design in accordance with the ASME BTH-1 standard and is not intended to replace finite element analysis (FEA). ASME BTH-1 is a design standard that employs simplified, conservative design equations together with prescribed design factors to ensure adequate structural capacity. Consequently, its results are not expected to match the local peak stresses predicted by FEA.
+>
+>FEA, on the other hand, is a stress analysis tool that evaluates the detailed stress distribution within the lifting lug, including localized stress concentrations around the pin hole. For linear elastic analyses, these local stresses generally correlate well with the stress concentration factors presented in Peterson's Stress Concentration Factors, Second Edition, by W. D. Pilkey, which provides charts relating the ($d/H$) ratio to the stress concentration factor, ($K_{te}$).
+>
+>Therefore, if the primary objective is to compare FEA results with analytical or numerical methods, it is more appropriate to reference Charts 5.11, 5.12, or 5.13 in Peterson's Stress Concentration Factors rather than comparing the results directly with ASME BTH-1 calculations.
+
 ***
 <details>
   <summary><strong>NOZZLE, TUBE JOINT & LIFTING LUG MODULE LIMITATIONS (Click to expand)</strong></summary>
